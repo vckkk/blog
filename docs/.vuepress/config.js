@@ -27,6 +27,9 @@ module.exports = {
       sidebarDepth: 0,
       search: true,
       searchMaxSuggestions: 10,
-      lastUpdated: '最后更新于：'
+      lastUpdated: '最后更新于：',
+      repo: 'git@github.com:vckkk/blog.git',
+      docsBranch: 'gh-pages'
+
     }
   }
