@@ -5,7 +5,6 @@ module.exports = {
       ['link',{rel:'icon',href:'/favicon.png'}]
     ],
     base:'/',
-    dest: '../../../../output',
     port:8085,
     serviceWorker:true,
     themeConfig:{
