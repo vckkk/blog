@@ -3,5 +3,28 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "d": "bash deploy.sh"
-  }
+  },
+  "dependencies": {
+    "vuepress": "^0.14.10",
+    "webpack-dev-middleware": "^3.6.0"
+  },
+  "name": "vckkk.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vckkk/vckkk.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vckkk/vckkk.github.io/issues"
+  },
+  "homepage": "https://github.com/vckkk/vckkk.github.io#readme",
+  "description": "blog"
 }
