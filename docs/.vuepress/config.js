@@ -27,5 +27,6 @@ module.exports = {
       sidebarDepth: 0,
       search: true,
       searchMaxSuggestions: 10,
+      lastUpdated: '最后更新于：'
     }
   }
