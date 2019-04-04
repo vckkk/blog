@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "2f586129f0d96f6f401cbe4eb1600754"
+    "revision": "c64859901ebf79777ca777d978c3bf27"
   },
   {
     "url": "assets/css/0.styles.fef5045a.css",
@@ -76,8 +76,8 @@ self.__precacheManifest = [
     "revision": "2bd78d34555f94c487108d18ecc96adf"
   },
   {
-    "url": "assets/js/app.76de992b.js",
-    "revision": "6c08097c3dcf5428a7d5cc7e1ffe266d"
+    "url": "assets/js/app.64da5a2d.js",
+    "revision": "5c95872fb68c945b87c28c6cf0c47d26"
   },
   {
     "url": "favicon.png",
@@ -85,39 +85,39 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "3000475f8f60e14aaf0ea5a5fea420eb"
+    "revision": "1665e4406648e9e290322e52ee2a472c"
   },
   {
     "url": "Pages/ali.html",
-    "revision": "939d26a7681899269776fe8e5a0e37b2"
+    "revision": "66949affdf730f73086fd39923c5073f"
   },
   {
     "url": "Pages/demo.html",
-    "revision": "26a82b6aa0f7a3b6cc776eff1fbb1147"
+    "revision": "bdc0b326b2191fe02b704d78171f42e1"
   },
   {
     "url": "Pages/ES6.html",
-    "revision": "d0cfcf0dc6a7d803ff63c2be961911bc"
+    "revision": "64e68fa9e6d82e0f1f278e9cc03bafbf"
   },
   {
     "url": "Pages/index.html",
-    "revision": "6a4241e4ebe836db3efa0a4e568e476f"
+    "revision": "9ba87bc55c5fad5957939aa90eeb36ee"
   },
   {
     "url": "Pages/JavaScript.html",
-    "revision": "e1d9fc7996b0d3a97161e958893e3ebe"
+    "revision": "712b58f20a059681fac880b0455cc70c"
   },
   {
     "url": "Pages/Reactjs.html",
-    "revision": "068c3744c541ff26e8e1799f073da229"
+    "revision": "d5cca03316684aa64e55533e70d6d5b4"
   },
   {
     "url": "Pages/网络基础.html",
-    "revision": "16e0eda17fdaeea046c7d25dc31149e4"
+    "revision": "51d69a2d339cb6b881d41bd9eb1500b4"
   },
   {
     "url": "Pages/阿里react全家桶.html",
-    "revision": "2ed30f06d006b6e8573db2e6f6eb70f3"
+    "revision": "5b9e5065a8177e50f2e3adb8dc06de48"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
