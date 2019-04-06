@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "4baf71f0c725faf277b429c268301f81"
+    "revision": "862f524a9d570595571303c28b1148ac"
   },
   {
     "url": "assets/css/0.styles.fef5045a.css",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "revision": "f9a966ca1e5cf504babf201c111e25e6"
   },
   {
-    "url": "assets/js/5.e089ba5f.js",
-    "revision": "0137da529cd55430d974c1d2e366a320"
+    "url": "assets/js/5.dfe2e394.js",
+    "revision": "787e21719960a010d0156a2fef9d6572"
   },
   {
     "url": "assets/js/6.cd28b8ee.js",
@@ -76,8 +76,8 @@ self.__precacheManifest = [
     "revision": "2bd78d34555f94c487108d18ecc96adf"
   },
   {
-    "url": "assets/js/app.ff750d8a.js",
-    "revision": "d57cc1dd96d9d35f874244728fc7e969"
+    "url": "assets/js/app.af89d476.js",
+    "revision": "9c7544d4578692f77bb758aad9338ed8"
   },
   {
     "url": "favicon.png",
@@ -85,39 +85,39 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "2c8e03c3cb3a5bcacc50fa7b95fcce85"
+    "revision": "234a01cf411f9a5ba8bab3066b13bd56"
   },
   {
     "url": "Pages/ali.html",
-    "revision": "434d0d6b098db24047cc92afd49880ab"
+    "revision": "5fac41df8f5e71618d7323c429ef0976"
   },
   {
     "url": "Pages/demo.html",
-    "revision": "66ad9755855498f5c29dbe18dcdc4efa"
+    "revision": "639530e1825cdafbf31e72966e7929ad"
   },
   {
     "url": "Pages/ES6.html",
-    "revision": "3b6d275b039e7375cb7592dfcfddec35"
+    "revision": "96dfd1f04cbff5d515ec5827cb3ae4fc"
   },
   {
     "url": "Pages/index.html",
-    "revision": "609e82bb2c9b995cec57d8dc836446a1"
+    "revision": "2837fdd8d54fbc9c4a59de017170781b"
   },
   {
     "url": "Pages/JavaScript.html",
-    "revision": "fd9de4113750535b03c21ef21854ff2e"
+    "revision": "0828f9ddbf797e1d21d53343973ae7a9"
   },
   {
     "url": "Pages/Reactjs.html",
-    "revision": "e3223a57d1cbf0e913e7ffa424ca2122"
+    "revision": "ce4adfaea6458d9cb622454d0991fca9"
   },
   {
     "url": "Pages/网络基础.html",
-    "revision": "9671de11aada84bac9d99e93c5bce3f1"
+    "revision": "917002d3dbad78e155fec57a13a81bff"
   },
   {
     "url": "Pages/阿里react全家桶.html",
-    "revision": "a4d807825d59857d462774bbaf27179b"
+    "revision": "8175b597635fcf77fb601b6a819f3ff5"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
