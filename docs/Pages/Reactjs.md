@@ -1,7 +1,7 @@
 # Reactjs
 
 ## 什么是React
-**A JavaScript library for building user interfaces**
+**A JavaScript library for building user interfacesß**
 
 一个用于构建用户页面的JavaScript库。如果你熟悉 MVC 概念的话，那么 React 的组件就相当于 MVC 里面的 View。如果你不熟悉也没关系，你可以简单地理解为，React.js 将帮助我们将界面分成了各个独立的小块，每一个块就是组件，这些组件之间可以组合、嵌套，就成了我们的页面。
 
@@ -19,9 +19,6 @@ React.js 不是一个框架，它只是一个库。它只提供 UI （view）层
 
 如果你对前端有些了解的话，这点东西不在话下，直接上手。
 
-
-
-​
 ```html
 ...//省略的公共部分
 <body>
@@ -34,9 +31,6 @@ React.js 不是一个框架，它只是一个库。它只提供 UI （view）层
 </body>
 
 ```
-​
-
-
 ​
 ```js
 const button = document.querySelector('.like-btn') // 获取按钮DOM
