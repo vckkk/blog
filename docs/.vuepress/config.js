@@ -11,7 +11,12 @@ module.exports = {
       activeHeaderLinks: false,
       nav:[
         {text:'Home',link:'/'},
-        {text:'Pages',link:'/Pages/'},
+        {text:'Pages',
+          items:[
+            {text:'JavaScript',link:'/Pages/'},
+            {text:'Flutter',link:'/Flutter/'}
+          ]
+        },
         {text: 'About', link: "http://www.webhbz.com"}
       ],
       sidebar: {
@@ -22,6 +27,10 @@ module.exports = {
           'Reactjs',
           'demo',
           'ali'
+        ],
+        '/Flutter/':[
+          '',
+          'Dart',
         ]
       },
       sidebarDepth: 0,
