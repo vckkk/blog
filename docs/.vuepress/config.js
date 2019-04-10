@@ -31,6 +31,8 @@ module.exports = {
         '/Flutter/':[
           '',
           'Dart',
+          'communication',
+          'route&nav'
         ]
       },
       sidebarDepth: 0,
