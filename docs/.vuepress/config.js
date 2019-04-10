@@ -28,11 +28,11 @@ module.exports = {
           'demo',
           'ali'
         ],
-        '/Flutter/':[
+        '/Flutter/': [
           '',
           'Dart',
           'communication',
-          'route&nav'
+          'routenav'
         ]
       },
       sidebarDepth: 0,

@@ -161,10 +161,10 @@ class TabBarDemoState extends State<TabBarDemo>
 
 
 
-收集整理来自：https://github.com/chinabrant/flutter_study Flutter等相关问题。
+收集整理来自：[flutter-study](https://github.com/chinabrant/flutter_study) Flutter等相关问题。
 
 
 
 Flutter中还有PageView (类似于TabBarView)，app效果和目前市场上的各大新闻客户端相似。
 
-具体代码来自：https://www.jianshu.com/p/7f5b7e7d3c9a
+具体代码来自：[简书](https://www.jianshu.com/p/7f5b7e7d3c9a)

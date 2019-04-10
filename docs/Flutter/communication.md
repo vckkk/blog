@@ -91,4 +91,4 @@ eventBus.fire(new MyEvent('信息')) // eventBus是你创建的实例，Myevent�
 
 
 
-收集整理来自：https://www.jianshu.com/p/25a85c02d586
+收集整理来自：[简书](https://www.jianshu.com/p/25a85c02d586)
