@@ -8,7 +8,8 @@ module.exports = {
     port:8085,
     serviceWorker:true,
     themeConfig:{
-      activeHeaderLinks: false,
+      // activeHeaderLinks: false,
+      displayAllHeaders:true,
       nav:[
         {text:'Home',link:'/'},
         {text:'Pages',
@@ -26,13 +27,16 @@ module.exports = {
           'JavaScript',
           'Reactjs',
           'demo',
-          'ali'
+          'ali',
+          'traversal',
+          'eventloop'
         ],
         '/Flutter/': [
           '',
           'Dart',
           'communication',
-          'routenav'
+          'routenav',
+
         ]
       },
       sidebarDepth: 0,
