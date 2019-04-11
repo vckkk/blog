@@ -58,18 +58,18 @@ Navigator.push<String>(context, new MaterialPageRoute(builder: (BuildContext con
 Navigator.pop(context,controller.text); //其中 controller.text是返给上一个页面的参数
 ​
 ```
-## Flutter中的导航  （整理来自 https://www.jianshu.com/p/fbd1d0e22f9c）
+## Flutter中的导航  ![整理来自](https://www.jianshu.com/p/fbd1d0e22f9c)
 
 ### 2.1 type
 在App中最常见的导航无非两种:底部导航和顶部导航（类似标签切换），而在Flutter中有已经封装好的Widget来实现这个效果和功能。
 
 ### 2.2 准备工作
 
-### 1）创建TabController
+#### 1）创建TabController
 
 TabController是Flutter自有的一个类，要实现导航，必须创建controller，这个controller是TabBarView和TabBar共有的一个参数，依靠这个参数将路由和导航实现同步。在组件初始化时 initState的钩子中创建 ，在组件习销毁时dispose（）的钩子中注销
 
-### 2）TabBar
+#### 2）TabBar
 
 TabBar就是导航自身，这个组件可以创建在任意地方
 
@@ -92,7 +92,7 @@ new TabBar(                    //创建导航
 ```
 
 
-### 3）TabBarView
+#### 3）TabBarView
 这个组件就是导航所对应的页面Widget
 ```dart
 new TabBarView(
