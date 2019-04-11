@@ -58,7 +58,7 @@ Navigator.push<String>(context, new MaterialPageRoute(builder: (BuildContext con
 Navigator.pop(context,controller.text); //其中 controller.text是返给上一个页面的参数
 ​
 ```
-## Flutter中的导航  ![整理来自](https://www.jianshu.com/p/fbd1d0e22f9c)
+## Flutter中的导航  [整理来自](https://www.jianshu.com/p/fbd1d0e22f9c)
 
 ### 2.1 type
 在App中最常见的导航无非两种:底部导航和顶部导航（类似标签切换），而在Flutter中有已经封装好的Widget来实现这个效果和功能。
