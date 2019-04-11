@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "2b0530b39056eac5c1a0054251358aef"
+    "revision": "88c7f84da5c0c78b0714569a48397026"
   },
   {
     "url": "assets/css/0.styles.fef5045a.css",
@@ -76,8 +76,8 @@ self.__precacheManifest = [
     "revision": "632c2fde97c0f3266fc129f5593a9aa9"
   },
   {
-    "url": "assets/js/6.629aab9c.js",
-    "revision": "0e43042302d825f93434b0ee42f0d5f7"
+    "url": "assets/js/6.c4594919.js",
+    "revision": "86f941578e674f7fcb178d70d83d5980"
   },
   {
     "url": "assets/js/7.4565d889.js",
@@ -92,8 +92,8 @@ self.__precacheManifest = [
     "revision": "bafd714f3b5b22232de43e782f31be7c"
   },
   {
-    "url": "assets/js/app.027a277c.js",
-    "revision": "05ca166c0a2a4259fc7b99f88d7ab5b0"
+    "url": "assets/js/app.01889e89.js",
+    "revision": "107697b853677b51c16ce6d77dae7a0a"
   },
   {
     "url": "favicon.png",
@@ -101,55 +101,55 @@ self.__precacheManifest = [
   },
   {
     "url": "Flutter/communication.html",
-    "revision": "ffcee0d621a0f09049fcc85d8e00991c"
+    "revision": "9002c541c7a6901d1706438f85e0dc42"
   },
   {
     "url": "Flutter/Dart.html",
-    "revision": "fbcec0636638d7e10e3de8f42ce9f48b"
+    "revision": "4c3d5c4ef29256e66fddcf0bd6215dd9"
   },
   {
     "url": "Flutter/index.html",
-    "revision": "e3c741ef529f1e80e9c4cdd114030d66"
+    "revision": "fb828224c23fa0657d9b62e1080a9294"
   },
   {
     "url": "Flutter/routenav.html",
-    "revision": "14b3d0dcce7061c56beb03c55628306c"
+    "revision": "43ed311e2074bb24631319041e9a64ba"
   },
   {
     "url": "index.html",
-    "revision": "0a7ce74f30054596bf9cfa165b6778dc"
+    "revision": "d001afc683586aad87f915cf562a20cc"
   },
   {
     "url": "Pages/ali.html",
-    "revision": "4f788f56fd8ca577b9e7c8c5c38a8204"
+    "revision": "9e0a8eddc8cdf74b9df7b8eda171b22e"
   },
   {
     "url": "Pages/demo.html",
-    "revision": "aab6618a7ebe52155a7ec87f788f4843"
+    "revision": "7316419351a2882bd35589b2ca5d5b7c"
   },
   {
     "url": "Pages/ES6.html",
-    "revision": "332b1ec903ecf3d92c028a35a1ce027a"
+    "revision": "565237c51f996ca383b8de8971a6878f"
   },
   {
     "url": "Pages/index.html",
-    "revision": "94a4f4d2e35765ef50f13d5cf1746d92"
+    "revision": "dcb08592ac893769060cc1e74f4787a9"
   },
   {
     "url": "Pages/JavaScript.html",
-    "revision": "fd7d7034e4cddedb2eb0ef3d8c8576a7"
+    "revision": "bf0f24b86664a1d4ebba0e00c1ace59d"
   },
   {
     "url": "Pages/Reactjs.html",
-    "revision": "79c5acb9cb933283c25807a51a9d027a"
+    "revision": "a4ece02f328fa19d555f135c2b1179be"
   },
   {
     "url": "Pages/网络基础.html",
-    "revision": "2f6d621ad3736e5537243065952758fc"
+    "revision": "4c1250a9dfe734eea4022808aca1855b"
   },
   {
     "url": "Pages/阿里react全家桶.html",
-    "revision": "c2239053588034aeffcbe3a9d584d2e0"
+    "revision": "c1d785c1db2347975f99c0a0a79e6c38"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
