@@ -15,7 +15,8 @@ module.exports = {
         {text:'Pages',
           items:[
             {text:'JavaScript',link:'/Pages/'},
-            {text:'Flutter',link:'/Flutter/'}
+            {text:'Flutter',link:'/Flutter/'},
+            {text:'Daily',link:'/Daily/'}
           ]
         },
         {text: 'About', link: "http://www.webhbz.com"}
@@ -37,7 +38,11 @@ module.exports = {
           'communication',
           'routenav',
 
-        ]
+        ],
+          '/Daily/':[
+            '',
+          ]
+        }
       },
       sidebarDepth: 0,
       search: true,
