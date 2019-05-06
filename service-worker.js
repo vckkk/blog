@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "55e11ac69d1048ab5f19f9c9199bfd12"
+    "revision": "a619e16a165758870aedd2465198d263"
   },
   {
     "url": "assets/css/0.styles.9854472c.css",
@@ -104,12 +104,12 @@ self.__precacheManifest = [
     "revision": "024ab232461b048dfb2a4075cd156724"
   },
   {
-    "url": "assets/js/app.0b090d59.js",
-    "revision": "760e6c41082a1d79fe7cde9e99949558"
+    "url": "assets/js/app.e4f4df63.js",
+    "revision": "d3b874770a267978b48bccec199ea40b"
   },
   {
     "url": "Daily/index.html",
-    "revision": "f2808e428bc92203206ff6d8a82f1425"
+    "revision": "b44ea40bfd3fc8b42de8a5df2c4c4913"
   },
   {
     "url": "favicon.png",
@@ -117,63 +117,63 @@ self.__precacheManifest = [
   },
   {
     "url": "Flutter/communication.html",
-    "revision": "a2620ba95834123bbabf6935b97c2646"
+    "revision": "ca6a4ca6e4255ab974f0ddd9b60ce237"
   },
   {
     "url": "Flutter/Dart.html",
-    "revision": "bda4fddb0334b7f8f574bcfa42a00b73"
+    "revision": "0bae3549aabda9432bc9e247bf56de51"
   },
   {
     "url": "Flutter/index.html",
-    "revision": "e10217ad8e599d25409850415f02f2cb"
+    "revision": "353b3cbfee7bb002003a45b0eb681ba8"
   },
   {
     "url": "Flutter/routenav.html",
-    "revision": "eb810a947d91f667deae2153714e95ec"
+    "revision": "c610d7c88ce1f7c8d518d01e61c4a461"
   },
   {
     "url": "index.html",
-    "revision": "ca65a23008bad3aa891cdb4e97608390"
+    "revision": "56d22bcbd46abd7a69c27f54d44911e0"
   },
   {
     "url": "Pages/ali.html",
-    "revision": "99bd7b3d385cc5c4abf8b4023062ea0c"
+    "revision": "478d01fada50927a202e12f9f9233ae5"
   },
   {
     "url": "Pages/demo.html",
-    "revision": "b903a9333407d2072844e7e4752877c2"
+    "revision": "f53baad79d6ffa79975b9a881724e05d"
   },
   {
     "url": "Pages/ES6.html",
-    "revision": "ac67d465ec012f90d197c28a27814eee"
+    "revision": "77a9d849d3ea72abc89b3f431820d9f4"
   },
   {
     "url": "Pages/eventloop.html",
-    "revision": "a97f4cafb312040d036bb7ae4083afe9"
+    "revision": "a6857b939b7f83b3b993dbc1dabc93e0"
   },
   {
     "url": "Pages/index.html",
-    "revision": "96d30989ed48a00c67ec9de58b9f94d3"
+    "revision": "752454e56c219c3e0eb3151caa07d5d0"
   },
   {
     "url": "Pages/JavaScript.html",
-    "revision": "31ffa0db80e8efc6fbd0bf1c0db80664"
+    "revision": "9d67ff9c3c54be52be48ec310d2fe862"
   },
   {
     "url": "Pages/Reactjs.html",
-    "revision": "fa294d6d369475e6aaceec7d64e47cef"
+    "revision": "591269b407241ffb58cecc376694702f"
   },
   {
     "url": "Pages/traversal.html",
-    "revision": "bf98efde12e240dbcd8ee6f6f03acfea"
+    "revision": "cf732d632c073c1881b61804e150d4f2"
   },
   {
     "url": "Pages/网络基础.html",
-    "revision": "3e21eb3e8277f43e252ea5b5e2eb4308"
+    "revision": "816606531006511dcfa06401cbf64c5d"
   },
   {
     "url": "Pages/阿里react全家桶.html",
-    "revision": "d8dd6e7c06823f09a06f047203534328"
+    "revision": "1ff72d10097f35c60d01612bce127ab9"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
