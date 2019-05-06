@@ -42,7 +42,6 @@ module.exports = {
           '/Daily/':[
             '',
           ]
-        }
       },
       sidebarDepth: 0,
       search: true,
