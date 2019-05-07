@@ -41,6 +41,7 @@ module.exports = {
         ],
           '/Daily/':[
             '',
+            '0507'
           ]
       },
       sidebarDepth: 0,
