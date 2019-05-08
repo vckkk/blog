@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "9a9f2443161c7b5dffffa2b737355743"
+    "revision": "05f7fde7f49e9ddb9f6f5fd9bb249640"
   },
   {
     "url": "assets/css/0.styles.9854472c.css",
@@ -80,12 +80,12 @@ self.__precacheManifest = [
     "revision": "f11119ae0014b1eb42e60ec39d16fb22"
   },
   {
-    "url": "assets/js/3.0400436c.js",
-    "revision": "7d8faffcbf176fbbe140f92c644d6c14"
+    "url": "assets/js/3.d6bdb4ad.js",
+    "revision": "8b0b40e79aced5be2703de970ad7e046"
   },
   {
-    "url": "assets/js/4.76d72fef.js",
-    "revision": "11ab1273ace3b1c906fa09aba8a755e6"
+    "url": "assets/js/4.923cf6cd.js",
+    "revision": "fc5ace9c0011d8be372dfd5258ede9c7"
   },
   {
     "url": "assets/js/5.2c13d659.js",
@@ -108,16 +108,16 @@ self.__precacheManifest = [
     "revision": "dd91cbcdcd68c5bfc41d3b232daa3639"
   },
   {
-    "url": "assets/js/app.28f80026.js",
-    "revision": "d3d77b7cbee487f4c1675d1eb3fe426b"
+    "url": "assets/js/app.84880a62.js",
+    "revision": "e9dbbfb7827f438050067457e563656f"
   },
   {
     "url": "Daily/0507.html",
-    "revision": "82ba5990b0312b9bb778c8a816491ca5"
+    "revision": "279e9ddac49f56eaf6e272927b5bfb8c"
   },
   {
     "url": "Daily/index.html",
-    "revision": "8dd4e4d4a5224cdc73d592f495423612"
+    "revision": "32a5c2af57ff91eee5742bac9f226902"
   },
   {
     "url": "favicon.png",
@@ -125,63 +125,63 @@ self.__precacheManifest = [
   },
   {
     "url": "Flutter/communication.html",
-    "revision": "3a66e679be4be778e59e793bf6522f3a"
+    "revision": "a6c567aa1b0e812bb63027bcf560bd20"
   },
   {
     "url": "Flutter/Dart.html",
-    "revision": "6cfc699590fd8b689d39b15b72da8e0f"
+    "revision": "e68e61581b9421d4754741e46e84fc79"
   },
   {
     "url": "Flutter/index.html",
-    "revision": "778c814ed5c8fd8f9d2168b1da97001e"
+    "revision": "f53674d7ef06d3ef3d6e577049cde84e"
   },
   {
     "url": "Flutter/routenav.html",
-    "revision": "48ebb186083494f878dff7c1dbd16217"
+    "revision": "a65b3b5a1698f0abe21c5c2e3de00426"
   },
   {
     "url": "index.html",
-    "revision": "23710acdab79caa514ee87ffe7f51227"
+    "revision": "d582dbcc0c33befa5de7216917d292f5"
   },
   {
     "url": "Pages/ali.html",
-    "revision": "63369c0c67a5cc8d4343c1099c45fd7f"
+    "revision": "c0cf96af1370fd4da7500c77d702a4ee"
   },
   {
     "url": "Pages/demo.html",
-    "revision": "eada06bdcedf1c6438552492e870bd1b"
+    "revision": "a63787461e3dc9c75a6e4ff92622453c"
   },
   {
     "url": "Pages/ES6.html",
-    "revision": "9a4d53ed7fc19a93bec90d8013df99b6"
+    "revision": "79d9f1d118ff12c5727aa9a5e0410c6b"
   },
   {
     "url": "Pages/eventloop.html",
-    "revision": "cafd8d79550ca856b846f5fe331a34f2"
+    "revision": "80bc5b882fb10b7812eeec557affe922"
   },
   {
     "url": "Pages/index.html",
-    "revision": "9ee09640b4bf107ae750a79809f1a8fa"
+    "revision": "2b54ecaf6162c94d8002cce6918b3d66"
   },
   {
     "url": "Pages/JavaScript.html",
-    "revision": "f5f84809b043e6ee8fdd690247a81346"
+    "revision": "42f86be97dc62573c7246c603fe4c92f"
   },
   {
     "url": "Pages/Reactjs.html",
-    "revision": "cc16d5ae8fde54c9120e2de9957f0bee"
+    "revision": "d92d61a75cb8a04dd62c6511f8ef3f6f"
   },
   {
     "url": "Pages/traversal.html",
-    "revision": "3d6ed857d36f78a60a7e5878ce1ce40d"
+    "revision": "ef774b5cd3c57cd30bbca416f85974c9"
   },
   {
     "url": "Pages/网络基础.html",
-    "revision": "d2590b14dd8ce460aae6caed263594a3"
+    "revision": "1a3427ab29a741b4925aa4ef62e28f0c"
   },
   {
     "url": "Pages/阿里react全家桶.html",
-    "revision": "755f3719a86d122f1f7e86d7c1fda14a"
+    "revision": "58ec385be3729b15612bf9c49bf0a156"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
