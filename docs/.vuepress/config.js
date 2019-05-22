@@ -55,7 +55,8 @@ module.exports = {
         'Dart',
         'communication',
         'routenav',
-        'pointer'
+        'pointer',
+        'dio'
 
       ],
       '/Daily/': [
