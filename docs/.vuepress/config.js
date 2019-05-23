@@ -48,7 +48,8 @@ module.exports = {
         'ali',
         'traversal',
         'eventloop',
-        'this'
+        'this',
+        'prototype'
       ],
       '/Flutter/': [
         '',
