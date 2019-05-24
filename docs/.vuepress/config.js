@@ -49,7 +49,7 @@ module.exports = {
         'traversal',
         'eventloop',
         'this',
-        'prototype~'
+        'prototype'
       ],
       '/Flutter/': [
         '',
