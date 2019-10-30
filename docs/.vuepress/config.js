@@ -12,7 +12,7 @@ module.exports = {
   port: 8085,
   serviceWorker: true,
   themeConfig: {
-    defaultTheme: 'dark',
+    //defaultTheme: 'dark',
     activeHeaderLinks: false,
     // displayAllHeaders: true,
     nav: [{
@@ -76,10 +76,10 @@ module.exports = {
     docsBranch: 'gh-pages'
 
   },
-  postcss: {
-    plugins: [
-      require('css-prefers-color-scheme/postcss'),
-      require('autoprefixer')
-    ]
-  }
+ // postcss: {
+   // plugins: [
+     // require('css-prefers-color-scheme/postcss'),
+      //require('autoprefixer')
+    //]
+  //}
 }
