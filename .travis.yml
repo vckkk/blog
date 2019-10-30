@@ -1,7 +1,8 @@
 language: node_js
 node_js:
   - "8"
-install: npm i
+install: npm i -g
+install: npm i vuepress-theme-ououe -D
 
 script: npm run build
 
