@@ -1,4 +1,5 @@
 module.exports = {
+  theme: 'ououe',
   title: 'Vckkk',
   description: 'Do what you want',
   head: [
@@ -11,27 +12,24 @@ module.exports = {
   port: 8085,
   serviceWorker: true,
   themeConfig: {
-    // activeHeaderLinks: false,
-    displayAllHeaders: true,
+    defaultTheme: 'dark',
+    activeHeaderLinks: false,
+    // displayAllHeaders: true,
     nav: [{
         text: 'Home',
         link: '/'
       },
       {
         text: 'Pages',
-        items: [{
-            text: 'JavaScript',
-            link: '/Pages/'
-          },
-          {
-            text: 'Flutter',
-            link: '/Flutter/'
-          },
-          {
-            text: 'Daily',
-            link: '/Daily/'
-          }
-        ]
+        link: '/Pages/'
+      },
+      {
+        text: 'Flutter',
+        link: '/Flutter/'
+      },
+      {
+        text: 'Daily',
+        link: '/Daily/'
       },
       {
         text: 'About',
@@ -69,9 +67,19 @@ module.exports = {
     sidebarDepth: 0,
     search: true,
     searchMaxSuggestions: 10,
-    lastUpdated: '最后更新于：',
+    // lastUpdated: '最后更新于：',
+    postTime: {
+      createTime: '创建时间',
+      lastUpdated: '更新时间'
+    },
     repo: 'git@github.com:vckkk/blog.git',
     docsBranch: 'gh-pages'
 
+  },
+  postcss: {
+    plugins: [
+      require('css-prefers-color-scheme/postcss'),
+      require('autoprefixer')
+    ]
   }
 }
