@@ -36,35 +36,35 @@ module.exports = {
         link: "http://www.webhbz.com"
       }
     ],
-    sidebar: {
-      '/Pages/': [
-        '',
-        'ES6',
-        'JavaScript',
-        'Reactjs',
-        'demo',
-        'ali',
-        'traversal',
-        'eventloop',
-        'this',
-        'prototype'
-      ],
-      '/Flutter/': [
-        '',
-        'Dart',
-        'communication',
-        'routenav',
-        'pointer',
-        'dio'
+//     sidebar: {
+//       '/Pages/': [
+//         '',
+//         'ES6',
+//         'JavaScript',
+//         'Reactjs',
+//         'demo',
+//         'ali',
+//         'traversal',
+//         'eventloop',
+//         'this',
+//         'prototype'
+//       ],
+//       '/Flutter/': [
+//         '',
+//         'Dart',
+//         'communication',
+//         'routenav',
+//         'pointer',
+//         'dio'
 
-      ],
-      '/Daily/': [
-        '',
-        '0507',
-        '0521'
-      ]
-    },
-    sidebarDepth: 0,
+//       ],
+//       '/Daily/': [
+//         '',
+//         '0507',
+//         '0521'
+//       ]
+//     },
+//     sidebarDepth: 0,
     search: true,
     searchMaxSuggestions: 10,
     // lastUpdated: '最后更新于：',
@@ -76,10 +76,10 @@ module.exports = {
     docsBranch: 'gh-pages'
 
   },
- // postcss: {
-   // plugins: [
-     // require('css-prefers-color-scheme/postcss'),
-      //require('autoprefixer')
-    //]
-  //}
+//  postcss: {
+//    plugins: [
+//      require('css-prefers-color-scheme/postcss'),
+//       require('autoprefixer')
+//     ]
+//   }
 }
