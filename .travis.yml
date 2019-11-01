@@ -6,7 +6,7 @@ node_js:
 #     - node_modules
 before_install: rm -rf node_modules  
 install: npm install
-# before_script: npm i @babel/core@^7.0.0-0
+before_script: npm i lru-cache
 
 script: npm run build
 
