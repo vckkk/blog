@@ -6,7 +6,7 @@ node_js:
 #     - node_modules
 before_install: rm -rf node_modules  
 install: npm install
-before_script: npm i lru-cache toml
+before_script: npm i lru-cache toml @vue/component-compiler-utils
 
 script: npm run build
 
