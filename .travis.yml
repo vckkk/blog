@@ -6,7 +6,7 @@ cache:
     - node_modules
     
 install: npm install
-
+before_script: npm i -g vuepress
 script: npm run build
 
 deploy:
