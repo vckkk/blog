@@ -34,6 +34,15 @@ module.exports = {
         link: '/Daily/'
       }
     ],
+    footer: [{
+        text: 'Power by VuePress',
+        link: 'https://vuepress.vuejs.org/',
+      },
+      {
+        text: 'Theme by ououe',
+        link: 'https://tolking.github.io/vuepress-theme-ououe/zh/'
+      }
+    ],
     search: true,
     useVssue: true,
     searchMaxSuggestions: 10,
