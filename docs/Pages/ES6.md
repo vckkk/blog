@@ -1,4 +1,21 @@
-# ES6
+---
+title: ES6
+lang: zh-CN
+image: /cover2.jpg
+display: home
+description: JavaScript ES6基础学习总结
+date: 2019-03-20
+tags:
+  - JavaScript
+  - ES6
+categories:
+  - Blog
+---
+
+  JavaScript ES6基础学习总结
+
+<!-- more-->
+
 ## let/const命令
 ### let
 let的作用类似var，是用来声明变量的，但是其所声明的变量只在let命令所在的代码块中有效。
