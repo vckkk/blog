@@ -1,6 +1,3 @@
 ---
-title: tets
-display: home
-tags: 
-  - other
+layout: Page
 ---

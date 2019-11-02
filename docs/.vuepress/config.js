@@ -15,22 +15,22 @@ module.exports = {
   themeConfig: {
     defaultTheme: 'dark',
     activeHeaderLinks: false,
-    cover: '/cover.jpg',
+    cover: {
+      base: '/cover.jpg',
+      '/Pages/': '/cover2.jpg',
+      '/Daily/': '/cover3.jpg'
+    },
     // displayAllHeaders: true,
     nav: [{
-        text: '',
+        text: '主页',
         link: '/'
       },
       {
-        text: '',
+        text: '文章归档',
         link: '/Pages/'
       },
       {
-        text: 'Flutter',
-        link: '/Flutter/'
-      },
-      {
-        text: 'Daily',
+        text: '积累',
         link: '/Daily/'
       }
     ],

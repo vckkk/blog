@@ -1,3 +1,11 @@
+---
+title: Flutter中的手势处理和通知
+display: home
+tags:
+  - Flutter
+categories: 
+  - Blog
+---
 
 # Flutter中的手势处理和通知
 ## 手势事件

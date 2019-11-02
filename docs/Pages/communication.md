@@ -1,3 +1,13 @@
+---
+title: 组建通信
+display: home
+date: 2018-11-17
+tags:
+  - Flutter
+categories: 
+  - Blog
+---
+
 # 组件通信
 ## 父组件向子组件传递参数
 在父组件中引入子组件时，将需要传递的信息写在 new childWidget( mykey : value )

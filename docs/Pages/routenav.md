@@ -1,3 +1,11 @@
+---
+title: Flutter的路由与导航
+display: home
+tags:
+  - Flutter
+categories: 
+  - Blog
+---
 # 路由与导航
 Flutter路由，与Vue、React等框架类似，通过路由来实现页面跳转。在Flutter中，就是通过路由来实现Widget之间的切换与传参。
 
