@@ -12,7 +12,7 @@ categories:
   - Blog
 ---
 
-  JavaScript ES6基础学习总结
+JavaScript ES6基础学习总结
 
 <!-- more-->
 
