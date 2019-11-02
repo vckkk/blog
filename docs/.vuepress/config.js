@@ -14,6 +14,7 @@ module.exports = {
   serviceWorker: true,
   themeConfig: {
     defaultTheme: 'dark',
+    showThemeButton: true,
     activeHeaderLinks: false,
     cover: {
       base: '/cover.jpg',

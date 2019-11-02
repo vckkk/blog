@@ -1,5 +1,7 @@
 ---
 title: 组建通信
+lang: zh-CN
+description: Flutter组建间的通信
 display: home
 date: 2018-11-17
 tags:
