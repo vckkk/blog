@@ -58,8 +58,8 @@ module.exports = {
       platform: 'github',
       owner: 'vckkk',
       repo: 'blog',
-      clientId: 'MDQ6VXNlcjM3MzI0MjIx',
-      clientSecret: 'c8f21f3c47c6e78f5e51e72e55a44f019a91ef8b'
+      clientId: '984053e0e793c132b63d',
+      clientSecret: 'a3b10a20454f05e2089ea6b9b6551ad56afd68d6'
     }],
   ]
 }
