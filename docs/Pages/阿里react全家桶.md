@@ -10,7 +10,11 @@ categorise:
   - Blog
 ---
 
-# 阿里react全家桶
+React开发必备技能学习
+
+<!-- more -->
+
+
 单独的reactjs只是ui构建库，只为我们解决了用户页面层的问题，并不能称之为开发框架。
 
 ## dva
