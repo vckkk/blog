@@ -14,7 +14,7 @@ categories:
 
 JavaScript ES6基础学习总结
 
-<!-- more-->
+<!-- more -->
 
 ## let/const命令
 ### let

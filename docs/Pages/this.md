@@ -18,7 +18,7 @@ categorise:
 
 - new绑定
 - 
-<!--more-->
+<!-- more -->
 
 
 ## 默认绑定

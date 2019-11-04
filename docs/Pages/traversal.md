@@ -12,7 +12,8 @@ categorise:
 
 常用的数据变量
 
-<!--more-->
+<!-- more -->
+
 ## 数组
 ### for循环
 ```js

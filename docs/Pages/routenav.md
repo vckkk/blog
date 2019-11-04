@@ -6,12 +6,14 @@ tags:
 categories: 
   - Blog
 ---
-# 路由与导航
+
 Flutter路由，与Vue、React等框架类似，通过路由来实现页面跳转。在Flutter中，就是通过路由来实现Widget之间的切换与传参。
+
+<!--more-->
 
 一、Flutter的静态路由 不能向下一个页面传递参数（push()不能传递参数，但是可以传递自己定义的已知参数），但是可以接受下一个页面返回的参数（ pop( ) 回来的参数）
 
-##命名路由
+## 命名路由
 命名路由(或称静态路由）的注册  在 MaterialApp 中有routes 类似Map（对象键值对的形式）的配置项 。
 
 ```Dart
