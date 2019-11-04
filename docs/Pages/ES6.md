@@ -1,7 +1,7 @@
 ---
 title: ES6
 lang: zh-CN
-image: /cover2.jpg
+image: /es6.jpeg
 display: home
 description: JavaScript ES6基础学习总结
 date: 2019-03-20

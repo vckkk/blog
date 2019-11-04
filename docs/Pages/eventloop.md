@@ -1,4 +1,18 @@
-# JavaScript的运行机制以及Event Loop
+---
+title: JavaScript的运行机制以及Event Loop
+display: home
+lang: zh-CN
+date: 2019-03-02
+tags:
+    - JavaScript
+categories:
+    - Blog
+---
+
+了解JS运行机制，是了解学习JS的异步事件的基础，之后会着重学习JS的异步事件。
+
+<!-- more -->
+
 ## 浏览器线程以及相关数据结构
 在学习JavaScript的运行机制之前，我们首先要了解以下几点知识：
 ### 浏览器内核的多线程

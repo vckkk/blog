@@ -10,7 +10,7 @@ module.exports = {
     }]
   ],
   base: '/',
-  port: 8085,
+  port: 8086,
   serviceWorker: true,
   themeConfig: {
     defaultTheme: 'dark',

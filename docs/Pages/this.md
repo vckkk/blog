@@ -1,8 +1,15 @@
-# this 
+---
+title: this 
+date: 2019-04-27
+lang: zh-CN
+tags:
+   - JavaScript
+categorise:
+   - Blog
+---
+
 ## what
-
 什么是this？this是一个指针，指向调用函数的对象。为了搞清this指向问题，我们先要知道this绑定的规则
-
 - 默认绑定
 
 - 隐式绑定
@@ -10,6 +17,9 @@
 - 显式绑定
 
 - new绑定
+- 
+<!--more-->
+
 
 ## 默认绑定
 

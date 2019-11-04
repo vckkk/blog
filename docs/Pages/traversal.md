@@ -1,4 +1,18 @@
-# 数据遍历
+---
+title: 数据遍历
+display: home
+date: 2019-04-08
+lang: zh-CN
+tags:
+    - JavaScript
+    - ES6
+categorise:
+    - Blog
+---
+
+常用的数据变量
+
+<!--more-->
 ## 数组
 ### for循环
 ```js

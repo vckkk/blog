@@ -1,5 +1,6 @@
 ---
 title: React全家桶
+image: /react.jpg
 description: React+Redux+Redux-saga
 date: 2019-04-20
 tags:

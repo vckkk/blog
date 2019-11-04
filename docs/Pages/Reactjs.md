@@ -1,7 +1,20 @@
-# Reactjs
+---
+title: Reactjs
+display: home
+date: 2018-11-24
+lang: zh-CN
+tags:
+  - React
+  - JavaScript
+categorise:
+  - Blog
+---
 
 ## 什么是React
 **A JavaScript library for building user interfacesß**
+
+<!-- more -->
+
 
 一个用于构建用户页面的JavaScript库。如果你熟悉 MVC 概念的话，那么 React 的组件就相当于 MVC 里面的 View。如果你不熟悉也没关系，你可以简单地理解为，React.js 将帮助我们将界面分成了各个独立的小块，每一个块就是组件，这些组件之间可以组合、嵌套，就成了我们的页面。
 
