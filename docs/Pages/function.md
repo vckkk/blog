@@ -14,7 +14,7 @@ categorise:
 <!-- more -->
 
 那对函数的了解又有多少呢？
-::: info
+
 执行一个函数时都发生了什么？
 ```js
 function say() {
@@ -24,7 +24,6 @@ function say() {
 
 say();
 ```
-:::
 
 ## 函数的执行机制
 ### 创建函数
