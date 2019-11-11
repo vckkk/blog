@@ -63,7 +63,51 @@ iter.next() // { value: 'c', done: false }
 iter.next() // { value: undefined, done: true }
 
 ```
+### 调用Iterator的场景
+以下场景都是借着内置的`Symbol.iterator`方法实现的。
+#### 解构赋值
+对数组和`Set`结构进行解构赋值时会默认调用。
+```js
+let set = new Set().add('x').add('y').add('z');
+let [a,b] = set;  // a = 'x' ; b = 'y';
+let [first,...rest] = set;  // first = 'x' ; rest = [ 'y', 'z' ]
+```
+#### 扩展运算
+扩展运算符`...`也会默认的调用`Symbol.iterator`方法。
+```js
+var str = 'hello';
+[...str] //  ['h','e','l','l','o']
+// 也就是说只要内部部署了Symbol.iterator()的结构，都可以通过调用它拉实现数组化。
 
+let arr = ['b', 'c'];
+['a', ...arr, 'd']
+// ['a', 'b', 'c', 'd']
+
+```
+#### yield*
+`yield`后面跟的是一个具体`Iterator`接口的数据结构。
+```JS
+let generator = function* () {
+  yield 1;
+  yield* [2,3,4];
+  yield 5;
+};
+
+var iterator = generator();
+
+iterator.next() // { value: 1, done: false }
+iterator.next() // { value: 2, done: false }
+iterator.next() // { value: 3, done: false }
+iterator.next() // { value: 4, done: false }
+iterator.next() // { value: 5, done: false }
+iterator.next() // { value: undefined, done: true }
+```
+#### 其他
+- for...of
+- Array.from()
+- Map(), Set(), WeakMap(), WeakSet()（比如new Map([['a',1],['b',2]])）
+- Promise.all()
+- Promise.race()
 
 ## 变量的解构赋值
 
@@ -71,17 +115,16 @@ iter.next() // { value: undefined, done: true }
 ### 数组的解构赋值
 数组解构的原理其实是消耗数组的迭代器，把生成对象的value属性的值赋值给对应的变量
 
-​
 ```js
 let [a, b, c] = [1, 2, 3];
+console.log(b) // 2
 
 ```
-​
+
 等号两边进行模式匹配，只要模式相同，右边的值就会对应的赋给左边，如果解构不成功，就赋'undefined'，如果等号右边不是具有interator接口的数据，则会报错。
 
 解构赋值允许存在默认值
 
-​
 ```js
 let [foo = true] = [];
 foo // true
@@ -89,10 +132,8 @@ let [x, y = 'b'] = ['a']; // x='a', y='b'
 let [x, y = 'b'] = ['a', undefined]; // x='a', y='b'
 
 ```
-​
 当数组成员严格等于（===）undefined时，默认值才会生效。默认值可以引用解构赋值的其他变量，但该变量必须已经声明。
 
-​
 ```js
 let [x = 1, y = x] = [];     // x=1; y=1
 let [x = 1, y = x] = [2];    // x=2; y=2
@@ -100,12 +141,11 @@ let [x = 1, y = x] = [1, 2]; // x=1; y=2
 let [x = y, y = 1] = [];     // ReferenceError: y is not defined
 
 ```
-​
 ### 对象的解构赋值
 对象的解构赋值是根据对象的键名进行赋值的。如键名与值相同，则可省略属性名。同样也可以进行嵌套解构赋值，也存在默认值。
 
 ### 字符串的解构赋值
-​
+
 ```js
 const [a, b, c, d, e] = 'hello';
 a // "h"
@@ -115,24 +155,22 @@ d // "l"
 e // "o"
 
 ```
-​
+
 类似数组也有length属性
 
 ### 函数参数的解构赋值
-​
+
 ```js
 function add([x, y]){
   return x + y;
 }
 add([1, 2]); // 3
 
-```
-​
-   
+```  
 
 函数参数的解构也可以使用默认值。
 
-​
+
 ```js
 function move({x = 0, y = 0} = {}) {
   return [x, y];
@@ -143,7 +181,7 @@ move({}); // [0, 0]
 move(); // [0, 0]
 
 ```
-​
+
 上面代码中，函数move的参数是一个对象，通过对这个对象进行解构，得到变量x和y的值。如果解构失败，x和y等于默认值。
 
 ## rest参数与扩展运算符
@@ -154,57 +192,53 @@ ES6中剩余运算符代替的之前的arguments参数（箭头函数没有argum
 
 
 
-​
+
 ```js
 // 我们来对比一下arguments和rest参数
 function F (a,b,c){
   console.log(arguments[0],arguments[1],arguments[2])
 }; 
 F(1,2,3) // 1,2,3
-​
+
 // rest参数
 function F(...rest){
   console.log(rest)
 }
-​
+
 F(1,2,3) //  [1,2,3]
 
 ```
-​
+
 
 
 剩余运算符除了可以在函数的参数中使用外，还能结合解构赋值一同在数组中使用。但是剩余运算符(...)必须在数组的最后一位，因为剩余运算符的原理其实是利用了数组的迭代器，它会消耗3个点后面的数组的所有迭代器，读取所有迭代器生成对象的value属性，而我们的解构也是消耗迭代器，如果剩余运算符在前会将数组的所以迭代器消耗，导致无法进行解构赋值。
 
 
 
-​
+
 ```js
 let [first,...other] = [1,2,3,4]
 first // 1
 other // [2,3,4]
 
 ```
-​
+
 
 
 ### 扩展运算符
 扩展运算符（spread）是三个点（...）。它好比 rest 参数的逆运算，将一个数组转为用逗号分隔的参数序列。
 
 
-
-​
 ```js
 let arr1 = [1,2,3];
 let arr2 = [...arr1,4,5]  // [1,2,3,4,5]
-​
+
 // 也能使用多个 类似数组的conect方法
 let arr1 = [1,2,3]
 let arr2 = [4,5,6]
 let arr3 = [..arr1,...arr2]  // [1,2,3,4,5,6]
-​
+
 ```
-​
-​
     
 
 在ES2018中，对象也是可以使用扩展运算符，之前我们说过数组的扩展运算符原理是消耗所有迭代器，但对象中并没有迭代器，我个人认为可能是实现原理不同，但是仍可以理解为将键值对从对象中拆开，它可以放到另外一个普通对象中，类似Object.assign( )。
@@ -213,19 +247,19 @@ let arr3 = [..arr1,...arr2]  // [1,2,3,4,5,6]
 ### 对象属性的简写
 在ES6中，当对象（Object）中的属性与值相同时，则可省略属性名。但是这个值必须是一个变量。如：
 
-​
+
 ```js
 let value = 0;
 let object = {
   value: value;
 }
-​
+
 let objectES6 = {
   value; //这里省略的是属性名value
 }
 
 ```
-​
+
 
 
  在实际中对象属性名的简写一般与解构赋值一起使用。
@@ -235,13 +269,13 @@ ES6中允许当对象中存在方法（函数）时，我们可以简写为：
 
 
 
-​
+
 ```js
 let objectES5 = {
   func： function(){
   }
 }
-​
+
 let objectES6 = {
   func() {
   },
@@ -249,7 +283,7 @@ let objectES6 = {
   }
 }
 ```
-​
+
 ## for...of...
   for...of循环是ES6新增的遍历方法，允许我们遍历一个存在iterator接口的数据，并返回所有项的值。
 
@@ -270,7 +304,7 @@ let arr = [1,2,3,4,5]
  }
 
 ```
-​
+
 
 for ... in会遍历对象的整个原型链,性能非常差不推荐使用,而for ... of只遍历当前对象不会遍历原型链
 对于数组的遍历,for ... in会返回数组中所有可枚举的属性(包括原型链上可枚举的属性),for ... of只返回数组的下标对应的属性值
@@ -278,10 +312,10 @@ for ... in会遍历对象的整个原型链,性能非常差不推荐使用,而fo
 
 
 
-​
+
 1
 TODO： JavaScript的数据遍历
-​
+
 ## 数据遍历
 [详见](./traversal.html)
 
@@ -289,7 +323,6 @@ TODO： JavaScript的数据遍历
 - TODO
 ## ES6 Module
 
-​
+
 1
 TODO： Common.js规范和ES6规范
-​
