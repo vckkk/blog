@@ -36,9 +36,8 @@ module.exports = {
       }
     ],
     footer: [{
-        link: '浙ICP备19049217号',
+        text: '浙ICP备19049217号',
         link: 'http://beian.miit.gov.cn'
-
       },
       {
         text: 'Power by VuePress',
