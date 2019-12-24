@@ -11,5 +11,5 @@ tag:
 <!-- more -->
 
 
-[知乎日报--下载](../../zhihuDaily-Flutter1.0.apk)
+[知乎日报--下载](https://github.com/vckkk/blog/releases/download/v1.0/zhihuDaily-Flutter1.0.apk)
 
