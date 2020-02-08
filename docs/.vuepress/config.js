@@ -33,7 +33,7 @@ module.exports = {
       {
         text: '积累',
         link: '/Daily/'
-      }
+      },
     ],
     footer: [{
         text: '浙ICP备19049217号',
