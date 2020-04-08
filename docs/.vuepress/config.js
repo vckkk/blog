@@ -1,6 +1,6 @@
 module.exports = {
   theme: 'ououe',
-  title: 'Vckkk's b1og',
+  title: `Vckkk's b1og`,
   description: 'Do what you want',
   vergreen: true,
   head: [
