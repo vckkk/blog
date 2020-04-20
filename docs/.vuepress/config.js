@@ -2,7 +2,7 @@ module.exports = {
   theme: 'ououe',
   title: `Vckkk's b1og`,
   description: 'Do what you want',
-  vergreen: true,
+  evergreen: true,
   head: [
     ['link', {
       rel: 'icon',
@@ -54,8 +54,8 @@ module.exports = {
     backgroundImage: true,
     // lastUpdated: '最后更新于：',
     postTime: {
-      createTime: '创建起始于',
-      lastUpdated: '最后更新于'
+      createTime: '最早创建于',
+      lastUpdated: '上次更新于'
     },
     repo: 'git@github.com:vckkk/blog.git',
     docsBranch: 'gh-pages'
