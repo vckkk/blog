@@ -105,11 +105,7 @@ language.sayHelo();
 ```js
 
 function sayHi(name){
-
    this.name = name;
-
- 
-
 }
 
 var Hi = new sayHi('js');
@@ -130,4 +126,5 @@ console.log('Helo', Hi.name);
 
 ## 箭头函数
 
-> TODO
+关于箭头函数的`this`指向问题，只要记住一句话即可。`指向箭头函数定义时所处的对象,而不是箭头函数使用时所在的对象,默认使用父级的this,`。
+绑定规则：绑定离自己最近的非箭头函数作用域里的this
