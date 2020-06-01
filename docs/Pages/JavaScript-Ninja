@@ -1,9 +1,12 @@
-#[摘]《JavaScript 忍者秘籍》读书笔记
+---
+title: [摘]《JavaScript 忍者秘籍》读书笔记
+tags:
+  - JavaScript
+---
 
-@(博文集)
-[源](https://github.com/fanxin2008/JavaScript-Ninja-Reading-Notes)
+[源](https://github.com/fanxin2008/JavaScript-Ninja-Reading-Notes)@(博文集)
 
-[TOC]
+<!-- more -->
 
 ## 第一部分 热身
 ###第1章 无处不在的JavaScript
