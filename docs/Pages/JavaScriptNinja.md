@@ -1,10 +1,13 @@
 ---
 title: [摘]《JavaScript 忍者秘籍》读书笔记
+date: 2020-05-31
+lang: zh-CN
+display: home
 tags:
   - JavaScript
-  
+categorise:
+  - Blog
 ---
-
 
 [源](https://github.com/fanxin2008/JavaScript-Ninja-Reading-Notes)@(博文集)
 
