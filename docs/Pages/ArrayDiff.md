@@ -1,9 +1,10 @@
 ---
 title: 数组之差
 ---
+
 利用lodash的 difference 和 js数组方式找出两个数组的增量与减量
 
-<!--more-->
+<!-- more -->
 
 ```js
 import { difference } from 'lodash-es';
