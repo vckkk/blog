@@ -11,7 +11,7 @@ module.exports = {
     ['script',{
       href:'//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
     }],
-    ['script',{},
+    ['script',{},`
     (function(){
       const footer = window.document.getElementsByTagName('footer')[0];
       const div = window.document.createElement('div');
@@ -19,7 +19,7 @@ module.exports = {
       div.innerHTML = '<span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>';
       footer.insertBefore(div,footer.lastElementChild)
     })()
-    ]
+    `]
   ],
   base: '/',
   port: 8086,
