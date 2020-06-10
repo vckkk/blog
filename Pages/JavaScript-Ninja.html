@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>【摘】《JavaScript 忍者秘籍》读书笔记 | Vckkk&#39;s b1og</title>
+    <meta name="description" content="Do what you want, So TMD what">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/favicon.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.f7e86f6b.css" as="style"><link rel="preload" href="/assets/js/app.5ab4da3d.js" as="script"><link rel="preload" href="/assets/js/14.b68b905f.js" as="script"><link rel="prefetch" href="/assets/js/10.86da458e.js"><link rel="prefetch" href="/assets/js/11.571fbb7f.js"><link rel="prefetch" href="/assets/js/12.60b1f64f.js"><link rel="prefetch" href="/assets/js/13.e7ba8a7f.js"><link rel="prefetch" href="/assets/js/15.e9acaa57.js"><link rel="prefetch" href="/assets/js/16.d82a426a.js"><link rel="prefetch" href="/assets/js/17.86b6fbbd.js"><link rel="prefetch" href="/assets/js/18.76858684.js"><link rel="prefetch" href="/assets/js/19.58725a8b.js"><link rel="prefetch" href="/assets/js/2.61793787.js"><link rel="prefetch" href="/assets/js/20.82acdce8.js"><link rel="prefetch" href="/assets/js/21.e1587062.js"><link rel="prefetch" href="/assets/js/22.ac7d4f0b.js"><link rel="prefetch" href="/assets/js/23.973217f5.js"><link rel="prefetch" href="/assets/js/24.9c2467eb.js"><link rel="prefetch" href="/assets/js/25.fcb26297.js"><link rel="prefetch" href="/assets/js/26.71134100.js"><link rel="prefetch" href="/assets/js/27.f1cad90c.js"><link rel="prefetch" href="/assets/js/28.07994a4c.js"><link rel="prefetch" href="/assets/js/29.800ac799.js"><link rel="prefetch" href="/assets/js/3.565d2664.js"><link rel="prefetch" href="/assets/js/30.7191b4c5.js"><link rel="prefetch" href="/assets/js/31.ed14a41a.js"><link rel="prefetch" href="/assets/js/32.95f8d603.js"><link rel="prefetch" href="/assets/js/33.bffdbda4.js"><link rel="prefetch" href="/assets/js/34.ede81f47.js"><link rel="prefetch" href="/assets/js/35.d11b6c14.js"><link rel="prefetch" href="/assets/js/36.e689e7b7.js"><link rel="prefetch" href="/assets/js/37.a19ba6c9.js"><link rel="prefetch" href="/assets/js/4.8315efb5.js"><link rel="prefetch" href="/assets/js/5.07782182.js"><link rel="prefetch" href="/assets/js/6.1a37de35.js"><link rel="prefetch" href="/assets/js/7.c2d8eabe.js"><link rel="prefetch" href="/assets/js/8.70490f32.js"><link rel="prefetch" href="/assets/js/9.e9107efb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f7e86f6b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><section id="global-layout" data-v-6115008e><header class="header" data-v-38e5da92 data-v-6115008e><div class="header-navbar" data-v-38e5da92><div class="flex-xbc main header-nav" data-v-38e5da92><div class="nav-link" data-v-38e5da92><a href="/" class="inblock link-logo router-link-active" data-v-38e5da92></a> <nav class="link-list" data-v-38e5da92><a href="/" class="list-item router-link-active" data-v-38e5da92>主页</a><a href="/Pages/" class="list-item router-link-active" data-v-38e5da92>文章归档</a><a href="/Daily/" class="list-item" data-v-38e5da92>积累</a></nav></div> <div class="search-box" data-v-38e5da92><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div></div> </header> <!----> <section class="page" data-v-6115008e><section class="info no-bg" data-v-79ff4ee6><article class="main info-content" data-v-246f9819 data-v-79ff4ee6><div class="content-header" data-v-246f9819><h1 class="header-title" data-v-246f9819>【摘】《JavaScript 忍者秘籍》读书笔记</h1></div> <!----> <div class="content content__default" data-v-246f9819><p>@(博文集)
+<a href="https://github.com/vckkk/JavaScript-Ninja-Reading-Notes/blob/master/JavaScript-Ninja-Reading-Notes.md" target="_blank" rel="noopener noreferrer">原地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>[TOC]</p> <h2 id="第一部分-热身"><a href="#第一部分-热身" class="header-anchor">#</a> 第一部分 热身</h2> <h3 id="第1章-无处不在的javascript"><a href="#第1章-无处不在的javascript" class="header-anchor">#</a> 第1章 无处不在的JavaScript</h3> <h4 id="一、javascript区别于其他语言的一些概念"><a href="#一、javascript区别于其他语言的一些概念" class="header-anchor">#</a> 一、JavaScript区别于其他语言的一些概念</h4> <ul><li><strong>函数是一等公民</strong>——在JavaScript中，函数与其他对象共存，并且能够像任何其他对象一样使用。</li> <li><strong>函数闭包</strong>——第3、4、5章会详细说明。</li> <li><strong>作用域</strong>——JavaScript没有类似C语言的块级作用域变量，取而代之只能依赖函数级别的变量和全局变量。</li> <li><strong>基于原型的面向对象</strong></li></ul> <h4 id="二、可以帮助书写更优雅的javascript代码"><a href="#二、可以帮助书写更优雅的javascript代码" class="header-anchor">#</a> 二、可以帮助书写更优雅的JavaScript代码</h4> <ul><li>生成器：一次请求生成多次值的函数</li> <li>Promise：便于控制异步代码</li> <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy" target="_blank" rel="noopener noreferrer">Proxy<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>：控制对特定对象的访问</li> <li>高级<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank" rel="noopener noreferrer">数组<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>方法：书写更优雅的数组处理函数</li> <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map" target="_blank" rel="noopener noreferrer">Map<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>：用于创建字典集合，保存键值对；<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set" target="_blank" rel="noopener noreferrer">Set<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>：存储任何类型的唯一值</li> <li>正则表达式</li> <li>modules：将代码划分为较小的可以自包含的片段，使项目便于管理。</li></ul> <h3 id="第2章-运行时的页面构建过程"><a href="#第2章-运行时的页面构建过程" class="header-anchor">#</a> 第2章 运行时的页面构建过程</h3> <h4 id="一、web应用生命周期概览"><a href="#一、web应用生命周期概览" class="header-anchor">#</a> 一、web应用生命周期概览</h4> <ol><li>Web应用的生命周期从用户在浏览器地址栏输入url，或单击一个链接开始。</li> <li>浏览器生成请求并发送至服务器，服务器执行某些动作或者获取某些资源，将响应发送回客户端；</li> <li>浏览器处理HTML，CSS和JavaScript并构建页面；</li> <li>监控事件队列，一次处理其中<font color="red">一个</font>事件；</li> <li>直至用户关闭或者离开页面。</li></ol> <h4 id="二、web页面构建阶段"><a href="#二、web页面构建阶段" class="header-anchor">#</a> 二、web页面构建阶段</h4> <div class="language- extra-class"><pre><code>在Web页面能被展示或者交互前，必须根据服务器获取的响应来构建，页面构建阶段的目标是建立Web应用的UI。包括两个步骤：
+1. 解析HTMl代码并构建文档对象模型（DOM）
+2. 执行JavaScript代码
+步骤2会在HTML解析到脚本节点时执行，在页面构建阶段，这两个步骤可能会交替执行多次。
+</code></pre></div><h5 id="_1、-html解析和dom构建"><a href="#_1、-html解析和dom构建" class="header-anchor">#</a> 1、 HTML解析和DOM构建</h5> <p>通过解析收到的HTML代码，构建一个个HTML元素，构建DOM。除了html根节点外，所有节点都只有一个父节点。为了正确构建DOM，浏览器会修复在HTML代码中发现的问题。每当解析到脚本元素时，浏览器就会停止从HTML构建DOM，开始执行JavaScript代码。</p> <h5 id="_2、执行javascript代码"><a href="#_2、执行javascript代码" class="header-anchor">#</a> 2、执行JavaScript代码</h5> <p>JavaScript代码由浏览器提供的JavaScript引擎执行。如Firefox的Spidermonkey（蜘蛛猴？）引擎，Chrome和Opera的V8引擎，还有Edge的Chakra引擎。</p> <ul><li><strong>2.1 JavaScript中的全局对象</strong>
+浏览器暴露给JavaScript引擎的主要全局对象是window对象，window对象最重要的属性是document，它代表了当前页面的DOM，通过这个对象，JavaScript能在***任何程度***上修改DOM。全局window对象会存在于整个页面的生存期之间。</li> <li><strong>2.2 JavaScript代码的不同类型</strong> <ul><li>函数代码：包含在函数中的代码，被其他代码调用。</li> <li>全局代码：位于函数之外的代码，由JavaScript引擎自动执行。</li></ul></li> <li><strong>2.3 在页面构建阶段执行JavaScript代码</strong>
+浏览器在页面构建阶段遇到了脚本节点，会停止HTML到DOM的构建转而开始执行JavaScript代码。JavaScript代码可以任意修改DOM结构，但是不能选择和修改还没被创建的节点。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>只要还有没处理完的HTML元素和没执行完的JavaScript代码，下面两个步骤都会一直交替执行。
+1.将HTML构建为DOM
+2.执行JavaScript代码
+最后当浏览器处理完所有的HTML元素后，页面构建阶段就结束了。
+</code></pre></div><h4 id="三、事件处理"><a href="#三、事件处理" class="header-anchor">#</a> 三、事件处理</h4> <h5 id="_1、事件处理器概览"><a href="#_1、事件处理器概览" class="header-anchor">#</a> 1、事件处理器概览</h5> <p>浏览器执行环境的核心思想基于：同一时刻只能执行一个代码片段，即所谓的单线程执行模型。所有已生成的事件（无论是用户生成的，例如鼠标移动或键盘按压，还是服务器生成的，如ajax请求）都会放在同一个事件队列中，以它们被浏览器检测到的顺序排列。
+Web应用的JavaScript代码中，大部分处理的事件为：</p> <ul><li>浏览器事件：页面加载完成或者无法加载时</li> <li>网络事件：接收到来自服务器的响应，如Ajax事件和服务器端事件</li> <li>用户事件：鼠标单击、移动或键盘事件</li> <li>计时器事件：timeout时间到期</li></ul> <h5 id="_2、注册事件处理器"><a href="#_2、注册事件处理器" class="header-anchor">#</a> 2、注册事件处理器</h5> <p>在客户端Web应用中，有两种方式注册事件。</p> <ul><li>通过把函数赋值给某个特殊属性：某个事件只能注册一个事件处理器，赋值的方式会将上一个事件处理器改写替换。如<code>window.loaded = function () {}</code></li> <li>通过使用内置addEventListener方法：可以注册尽可能多的事件。</li></ul> <h5 id="_3、处理事件"><a href="#_3、处理事件" class="header-anchor">#</a> 3、处理事件</h5> <p>事件处理的主要思想是：当事件发生时，浏览器调用相应的事件处理器。由于是单线程模型，同一时刻只能处理一个事件。在事件处理阶段，浏览器会循环检查事件队列，检查队首是否存在事件，如果存在则执行对应的事件处理。处理结束后，该事件从事件队列中移除，JavaScript引擎退出事件处理函数，事件循环再次检查队列。</p> <h2 id="第二部分理解函数"><a href="#第二部分理解函数" class="header-anchor">#</a> 第二部分理解函数</h2> <h3 id="第3章-新手的第一堂函数课：定义与参数"><a href="#第3章-新手的第一堂函数课：定义与参数" class="header-anchor">#</a> 第3章 新手的第一堂函数课：定义与参数</h3> <div class="language- extra-class"><pre><code>JavaScript中最关键的概念是：函数是第一类对象，或者被称为一等公民。函数和其他JavaScript数据类型一样，能被变量引用，能以字面量形式声明，甚至能被作为函数参数进行传递。
+</code></pre></div><h4 id="一、函数式的不同"><a href="#一、函数式的不同" class="header-anchor">#</a> 一、函数式的不同</h4> <h5 id="_1、函数是第一类对象"><a href="#_1、函数是第一类对象" class="header-anchor">#</a> 1、函数是第一类对象</h5> <p>JavaScript中函数拥有对象的所有能力，因此函数可被作为任意其他类型对象来对待。函数能够实现以下功能，也是JavaScript中对象具有的功能。</p> <ul><li>通过字面量创建</li></ul> <div class="language- extra-class"><pre class="language-text"><code>function funName () {} 
+</code></pre></div><ul><li>赋值给变量，数组或其他对象的属性</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var fun = function (){};
+arrName.push( function (){} );
+arrName.getName = function (){};
+</code></pre></div><ul><li>作为函数的参数来传递</li></ul> <div class="language- extra-class"><pre class="language-text"><code>function call (funName) {
+	funName();
+} 
+
+call(function(){});
+</code></pre></div><ul><li>作为函数返回值</li></ul> <div class="language- extra-class"><pre class="language-text"><code>function returnFun() {
+	return function(){};
+}
+</code></pre></div><ul><li>具有动态创建和分配的属性</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var funName = function(){};
+funName.name = &quot;Hanzo&quot;;
+</code></pre></div><p><strong>对象能做的任何事情，函数也都能做。函数也是对象，唯一的特殊之处在于，函数是可以调用的。</strong></p> <h5 id="_2、回调函数"><a href="#_2、回调函数" class="header-anchor">#</a> 2、回调函数</h5> <div class="language- extra-class"><pre><code>回调函数是指，我们创建的函数会被其他函数在稍后某个合适的时间点“再回来调用”。
+</code></pre></div><p>一个简单的示例</p> <div class="language- extra-class"><pre class="language-text"><code>var text = 'example';
+function useless(callback) {
+	console.log('I am unless function');
+	return callback();
+}
+function getText() {
+	console.log('In getText function');
+	return text;
+}
+console.log('Before making all the calls');
+console.log(useless(getText));
+console.log('After the calls have  been made');
+-------------------------------
+上述代码执行结果如下:
+Before making all the calls
+I am unless function
+In getText function
+example
+After the calls have  been made
+</code></pre></div><p>getText函数作为参数传入useless函数，在useless中，通过callback参数获取getText函数的引用，并通过callback()的调用让getText函数得到执行。</p> <div class="language- extra-class"><pre class="language-text"><code>console.log(useless(getText));
+//可以将上述代码改写成以下形式：
+console.log(useless(function() { return text; }));
+</code></pre></div><p>JavaScript的重要特性之一，在函数调用处定义函数，这种方式可以使代码更紧凑和易于理解。函数式方式让我们把函数作为一个单独的实体来创建，像对待其他类型一样，可以创建并作为参数传入一个方法。</p> <h4 id="二、函数作为对象的乐趣"><a href="#二、函数作为对象的乐趣" class="header-anchor">#</a> 二、函数作为对象的乐趣</h4> <h5 id="_1、自记忆函数"><a href="#_1、自记忆函数" class="header-anchor">#</a> 1、自记忆函数</h5> <p>记忆化是一种构建函数的处理过程，能够记住上次计算的结果。在这个函数中，当得到结果时，就将该结果和参数存储起来。如果另外一个调用使用相同的参数，无需再次计算，直接返回该参数对应的结果。对于动画计算和搜索不经常变化的数据，记忆化是十分有用的。
+下面这个例子，使用简单的算法来计算素数。</p> <div class="language- extra-class"><pre class="language-text"><code>function isPrime(value) {
+	if (!isPrime.answers) {
+		isPrime.answers = {};
+	}
+	if (isPrime.answers[value] !== undefined) {
+		return isPrime.answers[value];
+	}
+	var prime = value !== 0 &amp;&amp; value !== 1;
+	for (var i = 2; i &lt; value; i++) {
+		if (value % i === 0) {
+			prime = false;
+			break;
+		}
+	}
+	return isPrime.answers[value] = prime;
+}
+
+console.log('5是素数？',isPrime(5));
+console.log('该结果被缓存了？',isPrime.answers[5]);
+</code></pre></div><ul><li>在isPrime中，首先通过检查它的answers属性来确认是否已经创建了一个缓存，如果没有则新建一个，只有首次调用才会创建这个初始空对象。这个缓存是函数自身的一个属性，所以只要该函数还存在，缓存也就存在。</li> <li>优点：优先查找之前所得到的值，有一定的性能收益；无需执行任何特殊操作和初始化，就能顺利工作。</li> <li>缺点：任何缓存必然会为性能牺牲内存；无法知道该算法的复杂度，因为结果依赖于函数之前的输入。</li></ul> <h4 id="三、函数定义"><a href="#三、函数定义" class="header-anchor">#</a> 三、函数定义</h4> <p>JavaScript提供了4类定义函数的方式：</p> <ol><li>函数定义和函数表达式——最常用，却有着微妙的不同。</li> <li>箭头函数——ES6新增。</li> <li>函数构造函数——以字符串形式动态构造一个函数。</li> <li>生成器函数——ES6新增。</li></ol> <h5 id="_1、函数声明和函数表达式"><a href="#_1、函数声明和函数表达式" class="header-anchor">#</a> 1、函数声明和函数表达式</h5> <p>JavaScript中，定义函数最常用的方式是函数声明和函数表达式。</p> <ul><li>函数声明——函数声明是独立的，是一段独立的JavaScript代码块（但也能够被包含在其他函数或代码块中）。需要提供被调用的方式，所以函数名是必须的。</li> <li>函数表达式
+JavaScript中，函数是第一类对象，能让我们把函数和其他表达式同等看待。函数表达式可以作为变量声明赋值语句的一部分，可以作为一次函数调用中的参数，可以作为函数执行的返回值。函数表达式是其他JavaScript表达式的一部分，函数名是可选的。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>//函数表达式作为变量声明赋值语句中的一部分
+var myFunc = function(){};
+//函数表达式作为一次函数调用的参数&amp;&amp;函数执行的返回值
+myFunc(function(){
+	return function(){}
+})
+</code></pre></div><ul><li>立即函数（IIFE）
+当需要进行函数调用时，使用能够求值得到函数的表达式，其后跟着一对函数调用括号，括号内包含参数。如下所示，我们首先创建了一个函数，然后立即调用这个新创建的函数。这种函数叫做立即调用函数表达式（IIFE）</li></ul> <div class="language- extra-class"><pre class="language-text"><code>//标准函数调用——一个能够计算得到函数的表达式，本例中是一个标识符
+myFunctionName(3);
+
+//函数表达式的立即调用——一个能够计算得到函数的表达式，本例中是一个函数表达式
+(function(){})(3)	
+</code></pre></div><p>使用一元操作符，实现立即调用函数表达式，一元操作符得到的结果不会存储，一元操作符向JavaScript引擎指明它处理的是表达式而不是语句。</p> <div class="language- extra-class"><pre class="language-text"><code>+function(){}();
+-function(){}();
+!function(){}();
+~function(){}();
+</code></pre></div><h5 id="_2、箭头函数"><a href="#_2、箭头函数" class="header-anchor">#</a> 2、箭头函数</h5> <p>箭头函数是JavaScript标准中ES6的新增内容。箭头函数语句书写简单，以一串可选参数名列表开头，参数名以逗号分隔。如果没有参数或者多于一个参数时，参数列表必须包裹在括号内。当只有一个参数时，则可不需要括号。参数列表之后<font color="blud">必须跟着一个胖箭头</font>，以此向JavaScript引擎表明当前处理的是箭头函数。</p> <div class="language- extra-class"><pre class="language-text"><code>//表达式可直接跟在胖箭头后面
+var greet = name =&gt; 'Greetings ' + name;
+
+//箭头操作符后可跟一个代码块
+var greet = name =&gt; {
+	var helloString = 'Greetings ';
+	return helloString + name;
+}
+</code></pre></div><p>如果没有return语句，返回undefined，反之返回值就是return表达式的值。</p> <h4 id="四、函数的形参和实参"><a href="#四、函数的形参和实参" class="header-anchor">#</a> 四、函数的形参和实参</h4> <ul><li>形参是定义函数时所列举的变量</li> <li>实参是调用函数时传递给函数的值</li> <li>调用函数时提供的实参，会以形参在函数中定义的顺序被依次赋值，如果实参的数量大于形参，那么额外的实参不会赋值给任何形参。反之，如果形参数量大于实参，那么那些没有对应实参的形参会被置为undefined。</li></ul> <h5 id="_1、剩余参数-不与任何形参名称相匹配的额外实参可通过剩余参数引用。"><a href="#_1、剩余参数-不与任何形参名称相匹配的额外实参可通过剩余参数引用。" class="header-anchor">#</a> 1、剩余参数——不与任何形参名称相匹配的额外实参可通过剩余参数引用。</h5> <p>剩余参数已被加入ES6标准
+为函数的最后一个命名参数前加上省略号前缀，这个参数就变成剩余参数，该参数类型是数组，数组内包含着传入的剩余参数。只有函数的最后一个形参才能成为剩余参数。</p> <h5 id="_2、默认参数-函数调用时，若没传入参数，默认参数可以给函数提供缺省的参数值。"><a href="#_2、默认参数-函数调用时，若没传入参数，默认参数可以给函数提供缺省的参数值。" class="header-anchor">#</a> 2、默认参数——函数调用时，若没传入参数，默认参数可以给函数提供缺省的参数值。</h5> <p>由于JavaScript不支持重载，在设置函数默认参数时，需要逐个判断。通过使用typeof操作符，检查对应形参是否被设置形参。typeof操作符返回一个字符串用于表明操作数的类型，如果该操作数未被定义，那么typeof操作符返回字符串undefined。
+ES6中，创建默认参数的方法是为函数的形参赋值。</p> <h3 id="第4章-函数进阶：理解函数调用"><a href="#第4章-函数进阶：理解函数调用" class="header-anchor">#</a> 第4章 函数进阶：理解函数调用</h3> <h4 id="一、使用隐式函数参数"><a href="#一、使用隐式函数参数" class="header-anchor">#</a> 一、使用隐式函数参数</h4> <p>函数在调用时，除了显式声明的参数外，还会传递两个隐式的参数：arguments和this。</p> <h5 id="_1、arguments参数"><a href="#_1、arguments参数" class="header-anchor">#</a> 1、arguments参数</h5> <ul><li>arguments参数是传递给函数的所有参数集合。</li> <li>arguments不是数组，但是有名为length的属性，表示实参的确切个数。通过数组索引的方式可以获得单个参数的值。</li> <li>arguments可以作为函数实参的别名。在非严格模式下，改变arguments对象的值，会影响对应的函数参数值，同时，修改某个参数值，会影响参数和arguments对象。</li> <li>避免使用别名。在JavaScript提供的严格模式中，无法将arguments作为函数参数的别名使用。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&quot;use strict&quot;
+function test(person){
+	console.log('before change arguments is ', arguments[0]);
+	console.log('before change person is ', person);
+	person = &quot;Lily&quot;;
+	console.log('after change person, arguments is ', arguments[0]);
+	console.log('after change person, person is ', person);
+	arguments[0] = 'Rose';
+	console.log('after change arguments, arguments is ', arguments[0]);
+	console.log('after change arguments, person is ', person);
+}
+
+test('Polly');
+//打印结果：
+before change arguments is  Polly
+before change person is  Polly
+after change person, arguments is  Polly
+after change person, person is  Lily
+after change arguments, arguments is  Rose
+after change arguments, person is  Lily
+</code></pre></div><h5 id="_2、this参数：函数上下文"><a href="#_2、this参数：函数上下文" class="header-anchor">#</a> 2、this参数：函数上下文</h5> <p><strong>this参数的指向，由定义函数的方式和位置决定，同时还受到函数调用方式的严重影响。</strong></p> <h4 id="二、函数调用"><a href="#二、函数调用" class="header-anchor">#</a> 二、函数调用</h4> <p>调用函数的4种方式</p> <ul><li>作为一个函数，被直接调用</li> <li>作为一个方法，被关联在一个对象上。</li> <li>作为一个构造函数，实例化一个新的对象</li> <li>通过函数的apply或者call方法</li></ul> <div class="language- extra-class"><pre class="language-text"><code>function mvp(name) {}
+function Fmvp(name) {}
+
+//作为函数调用
+mvp('Kevin');
+(function(who){return who;})('Kevin')
+
+//作为对象的一个方法被调用
+var golden = {
+	mvp: function() { }
+}
+golden.mvp('Kevin');
+//作为构造函数调用
+golden = new Fmvp('Kevin');
+
+//通过call方法调用
+golden.call(mvp,'Kevin');
+//通过apply方法调用
+golden.apply(mvp, ['Kevin']);
+
+</code></pre></div><p>除了call和apply方式外，函数的调用操作符都是函数表达式之后加一对圆括号。</p> <h5 id="_1、作为函数，直接被调用"><a href="#_1、作为函数，直接被调用" class="header-anchor">#</a> 1、作为函数，直接被调用</h5> <p>通过()运算符调用一个函数，且被调用的函数表达式不是作为一个对象的属性存在时，就是直接被调用。当以这种方式调用时，函数上下文this的值有两种可能：在非严格模式下，它是全局上下文（window对象）；在严格模式下，它是undefined。</p> <div class="language- extra-class"><pre class="language-text"><code>function unStrict() {
+	return this;
+}
+
+function isStrict(){
+	&quot;use strict&quot;;
+	return this;
+}
+console.log('非严格模式下的this ', unStrict());
+console.log('严格模式下的this ', isStrict());
+
+//输出结果为：
+非严格模式下的this  Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, parent: Window, …}
+严格模式下的this  undefined
+</code></pre></div><h5 id="_2、作为方法被调用"><a href="#_2、作为方法被调用" class="header-anchor">#</a> 2、作为方法被调用</h5> <p>当一个函数被赋值给一个对象的属性，并且通过对象属性引用的方式调用时，函数会作为对象的方法被调用。这种情况下函数被称为方法（method）。当函数作为某个对象的方法被调用时，该对象会成为函数的上下文，并且在函数内部可通过this访问到。</p> <div class="language- extra-class"><pre class="language-text"><code>function whatMyThis() {
+	return this;
+}
+console.log('作为函数被调用,上下文为',whatMyThis());
+
+var getMyThis = whatMyThis;
+console.log('使用变量来调用函数，上下文为',getMyThis())
+
+var content1 = {
+	name:'content1',
+	getMyThis: whatMyThis	
+}
+console.log('使用content1对象的方法getMyThis来调用函数，上下文为',content1.getMyThis())
+
+var content2 = {
+	name:'content2',
+	getMyThis: whatMyThis	
+}
+console.log('使用content2对象的方法getMyThis来调用函数，上下文为',content2.getMyThis())
+
+
+//打印结果为
+作为函数被调用,上下文为 Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, parent: Window, …}
+使用变量来调用函数，上下文为 Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, parent: Window, …}
+使用content1对象的方法getMyThis来调用函数，上下文为 {name: &quot;content1&quot;, getMyThis: ƒ}
+使用content2对象的方法getMyThis来调用函数，上下文为 {name: &quot;content2&quot;, getMyThis: ƒ}
+</code></pre></div><p>在整个实例中，whatMyThis是一个独立的函数，由于调用的方式不同，函数的上下文是不同的。在不同的对象中，共享了完全相同的函数，但当执行函数时，该函数可以访问并操作所属对象的其他方法。</p> <h5 id="_3、作为构造函数调用"><a href="#_3、作为构造函数调用" class="header-anchor">#</a> 3、作为构造函数调用</h5> <p>若要通过构造函数的方式调用，需要在函数调用之前使用关键字new。
+使用关键字new调用函数会触发以下操作：</p> <ol><li>创建一个新的空对象</li> <li>该对象作为this参数传递个构造函数，从而成为构造函数的函数上下文</li> <li>新构造的对象作为new运算符的返回值。（除了构造函数自身返回一个对象）</li></ol> <p><strong>构造函数自身返回值时</strong></p> <ul><li>如果构造函数返回一个对象，则该对象将作为整个表达式的值返回，替换new关键字创建的对象，作为函数上下文。</li> <li>如果构造函数返回的是非对象类型，则忽略返回值，返回new关键字创建的对象。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>//使用构造函数来实现通用函数
+function Ninja(name) {
+	this.name = name;
+	this.skill = function() {
+			return this;
+	};
+}
+var ninja1 = new Ninja('ninja1');
+var ninja2 = new Ninja('ninja2');
+
+console.log('ninja1的skill上下文，', ninja1.skill());
+console.log('ninja2的skill上下文，', ninja2.skill());
+
+//打印结果
+ninja1的skill上下文， Ninja {name: &quot;ninja1&quot;, skill: ƒ}
+ninja2的skill上下文， Ninja {name: &quot;ninja2&quot;, skill: ƒ}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>//如果构造函数有返回值，返回字符串
+function Ninja(name) {
+	this.name = name;
+	this.skill = function() {
+			return this;
+	};
+	return this.name;
+}
+var ninja1 = new Ninja('ninja1');
+var ninja2 = new Ninja('ninja2');
+
+console.log('ninja1的skill上下文，', ninja1.skill());
+console.log('ninja2的skill上下文，', ninja2.skill());
+//打印结果
+ninja1的skill上下文， Ninja {name: &quot;ninja1&quot;, skill: ƒ}
+ninja2的skill上下文， Ninja {name: &quot;ninja2&quot;, skill: ƒ}
+
+//可见，构造函数返回非对象，依旧会通过构造并返回一个新对象
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>//如果构造函数返回一个对象，那么通过new关键字调用，会返回什么？
+var people = {
+	name : 'global people',
+	skill: false
+}
+
+function Ninja(name) {
+	this.name = name;
+	this.skill = true;
+	return people;
+}
+var ninja1 = new Ninja('ninja1');
+var ninja2 = new Ninja('ninja2');
+
+ninja1.skill1 = function(){
+	return this;
+}
+
+console.log('ninja1，', ninja1.skill1())
+console.log('ninja2，', ninja2.skill1())
+//打印结果为：
+ninja1， {name: &quot;global people&quot;, skill: false, skill1: ƒ}
+ninja2， {name: &quot;global people&quot;, skill: false, skill1: ƒ}
+</code></pre></div><p><strong>通过以上测试，可以知道：</strong></p> <ul><li>如果构造函数返回一个对象，则该对象将作为整个表达式的返回值，而传入构造函数的this将被抛弃。</li> <li>如果构造函数返回值不是对象，则忽略返回值，返回新创建的对象。</li></ul> <p><strong>编写构造函数则注意事项</strong></p> <ul><li>推荐使用严格模式编写构造函数。</li> <li>为方便区分构造函数和普通函数，通常以名词命名构造函数，并以大写字母开头。</li></ul> <h5 id="_4、使用apply和call方法调用"><a href="#_4、使用apply和call方法调用" class="header-anchor">#</a> 4、使用apply和call方法调用</h5> <p>需要注意的是，不同函数的主要区别在于：最终作为函数调用上下文传（this）递给执行函数的对象不同。使用apply和call方法可以显式的指定函数上下文。使用apply方法调用函数，需要为其传递两个参数：作为函数上下文的对象和一个数组作为函数调用的参数。call方法的使用方式类似，参数以列表的形式传入，而不是数组。</p> <div class="language- extra-class"><pre class="language-text"><code>//使用apply和call方法设置函数上下文
+function add() {
+	var result = 0;
+	for (var n = 0; n &lt; arguments.length; n++) {
+		result += arguments[n];
+	}
+	this.result = result;
+}
+var ninja1 = {};
+var ninja2 = {};
+add.apply(ninja1, [1, 2, 3]);
+add.call(ninja2, 2, 3, 4);
+
+console.log('ninja1.result',ninja1.result);
+console.log('ninja2.result', ninja2.result);
+//打印结果
+ninja1.result 6
+ninja2.result 9
+</code></pre></div><p>使用call方法和apply方法强制指定回调函数的函数上下文</p> <div class="language- extra-class"><pre class="language-text"><code>function forEach(list, callback) {
+	for(var n = 0; n &lt; list.length; n++) {
+		callback.call(list, n);
+	}
+}
+
+var col = [0, 1, 2, 3];
+forEach(col, function(n) {
+	console.log(this[n])//此时this为col数组
+});
+//打印结果：
+0
+1
+2
+3
+</code></pre></div><h4 id="三、解决函数上下文的问题"><a href="#三、解决函数上下文的问题" class="header-anchor">#</a> 三、解决函数上下文的问题</h4> <h5 id="_1、使用箭头函数绕过函数上下文问题"><a href="#_1、使用箭头函数绕过函数上下文问题" class="header-anchor">#</a> 1、使用箭头函数绕过函数上下文问题</h5> <p><strong>箭头函数没有单独的this。箭头函数的this与声明所在的上下文相同。</strong>
+以下为两个奇怪的例子</p> <div class="language- extra-class"><pre class="language-text"><code>//示例一
+function Button(){
+	this.clicked = false;
+	this.clickTimes = 0;
+	this.click = () =&gt; {
+		this.clicked = true;
+		this.clickTimes++;
+		console.log(button.clicked, 'this button clicked',this.clickTimes ,'times');
+	} 
+}
+var button = new Button();
+button.click();
+true &quot;this button clicked&quot; 1 &quot;times&quot;
+button.click()
+true &quot;this button clicked&quot; 2 &quot;times&quot;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>//示例二
+var button = {
+	clicked: false,
+	clickTimes: 0,
+	click: () =&gt; {
+		this.clicked = true;
+		this.clickTimes++;
+		console.log(button.clicked, 'this button clicked',this.clickTimes ,'times');
+	}
+}
+button.click();
+button.click();
+//打印结果
+false &quot;this button clicked&quot; NaN &quot;times&quot;
+false &quot;this button clicked&quot; NaN &quot;times&quot;
+</code></pre></div><p>两个示例中，箭头函数的this不相同。示例一中，箭头函数是button对象的方法，箭头函数的this为button对象，示例二中，箭头函数是作为对象字面量button对象的属性定义的，因此箭头函数的this为全局window对象。</p> <blockquote><p>**来自灵魂的发问：**到底什么是对象的方法，什么是对象的属性？？？</p></blockquote> <h5 id="_2、使用bind方法"><a href="#_2、使用bind方法" class="header-anchor">#</a> 2、使用bind方法</h5> <p>bind方法创建并返回一个新函数，bind方法创建的新函数与原函数的函数体相同，新函数被绑定到指定的对象上。
+回到上文示例二中</p> <div class="language- extra-class"><pre class="language-text"><code>var button = {
+	clicked: false,
+	clickTimes: 0,
+	click: function(){
+		this.clicked = true;
+		this.clickTimes++;
+		console.log(button.clicked, 'this button clicked',this.clickTimes ,'times');
+	}
+}
+var btnfun = button.click.bind(button);
+btnfun()
+true &quot;this button clicked&quot; 1 &quot;times&quot;
+</code></pre></div><h3 id="第5章-精通函数：闭包和作用域"><a href="#第5章-精通函数：闭包和作用域" class="header-anchor">#</a> 第5章 精通函数：闭包和作用域</h3> <h4 id="一、理解闭包"><a href="#一、理解闭包" class="header-anchor">#</a> 一、理解闭包</h4> <p>闭包允许函数访问并操作函数外部的变量。只要变量或函数存在于声明函数时的作用域内，闭包即可时函数能够访问这些变量或函数。</p> <p><strong>一个最简单的闭包</strong></p> <div class="language- extra-class"><pre class="language-text"><code>var outerValue = &quot;ninja&quot;;//在全局作用域中定义一个变量
+function outerFunction() { //在全局作用域中声明函数
+	console.log(outerValue);
+}
+outerFunction();   //执行该函数
+</code></pre></div><p>外部变量和外部函数都是在全局作用域中声明的，该作用域在运行时从未消失，这个作用域就是一个闭包。</p> <p><strong>另一个闭包的例子</strong></p> <div class="language- extra-class"><pre class="language-text"><code>var outerValue = &quot;It`s hot!&quot;;
+var later;                  //声明一个外部空变量
+function outerFunction() {
+	var innerValue = &quot;Vary hot!&quot;;   //声明一个内部变量，在函数外不可被访问
+	function innerFunction() {      //声明一个内部函数
+		console.log('I`m innerFunction!');
+		console.log(outerValue);
+		console.log(innerValue);
+	}
+	later = innerFunction;          //将内部函数innerFunction的索引存储在外部变量later中。
+	console.log('I`m outerFunction!')	
+}
+outerFunction();      //通过调用outerFunction，创建并将内部函数赋值给变量later
+later();    //通过later调用内部函数，
+
+//打印结果：
+I`m outerFunction!
+I`m innerFunction!
+It`s hot!
+Vary hot!
+
+</code></pre></div><blockquote><p>每一个通过闭包访问变量的函数都有一个作用域链，作用域链包含闭包的全部信息。使用闭包时，所有的信息都会存储在内存中，直到JavaScript引擎回收或者页面卸载时，才会被清理。</p></blockquote> <h4 id="二、使用闭包"><a href="#二、使用闭包" class="header-anchor">#</a> 二、使用闭包</h4> <h5 id="_1、封装私有变量"><a href="#_1、封装私有变量" class="header-anchor">#</a> 1、封装私有变量</h5> <div class="language- extra-class"><pre class="language-text"><code>function Ninja(nameValue) {
+	var name = nameValue;
+	var feints = 0;
+	this.getFeints = function() {
+		return feints;
+	};
+	this.feint = function() {
+		feints++
+	};
+}
+
+var ninja1 = new Ninja();
+ninja1.feint();
+
+console.log(ninja1.feints);
+console.log(ninja1.getFeints());
+
+//打印结果
+undefined    //无法直接访问到feints
+1            //可通过get方法获得
+</code></pre></div><h5 id="_2、回调函数-2"><a href="#_2、回调函数-2" class="header-anchor">#</a> 2、回调函数</h5> <div class="language-vbscript-html extra-class"><pre class="language-text"><code>&lt;div id=&quot;box1&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;box2&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;box3&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+  function animateIt(el) {
+    var elem = document.getElementById(el);
+    var tick = 0;
+    var timer = setInterval(function() {
+      if(tick &lt; 100) {
+        elem.style.left = elem.style.top = tick + 'px';
+        
+        tick++;
+      } else {
+        clearInterval(timer);
+        console.log(tick);  
+      }
+    }, 10);
+  }
+  animateIt('box1');
+  animateIt('box2');
+  animateIt('box3'); 
+&lt;/script&gt;
+</code></pre></div><blockquote><p>每个动画都在处理程序闭包内获得私有变量
+该实例无法访问其他闭包内的变量</p></blockquote> <h4 id="三、通过执行上下文来跟踪代码"><a href="#三、通过执行上下文来跟踪代码" class="header-anchor">#</a> 三、通过执行上下文来跟踪代码</h4> <p>JavaScript代码有两种类型，对应有两种函数执行上下文。</p> <ul><li>全局代码，全局代码的函数执行上下文只有一个，当JavaScript程序开始执行时就已经创建了全局上下文</li> <li>函数代码，每次调用函数时，就会创建一个新的函数执行上下文。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>function skulk(ninja) {
+	report(ninja + &quot; skulking&quot;);
+}
+function report(message) {
+	console.log(message);
+}
+skulk(&quot;Kuma&quot;);
+skulk(&quot;Yoshi&quot;);
+</code></pre></div><p>上述代码在执行时的执行上下文为：</p> <ol><li>每个JavaScript程序只创建一个全局执行上下文</li> <li>调用skulk(&quot;Kuma&quot;)时，创建新的skulk函数执行上下文，推入栈</li> <li>执行skulk(&quot;Kuma&quot;)时，调用report函数，创建新的report函数执行上下文，推入栈</li> <li>report执行打印命令，结束后，report函数执行上下文被弹出</li> <li>skulk函数的执行上下文被激活，skulk函数继续执行，执行结束后，其执行上下文被弹出</li> <li>调用skulk(&quot;Yoshi&quot;)，过程如上。</li></ol> <h4 id="四、使用词法环境跟踪变量作用域"><a href="#四、使用词法环境跟踪变量作用域" class="header-anchor">#</a> 四、使用词法环境跟踪变量作用域</h4> <p><strong>词法环境是JavaScript引擎内部用来跟踪标识符与特定变量之间的映射关系，通常称为作用域。</strong></p> <h5 id="_1、代码嵌套"><a href="#_1、代码嵌套" class="header-anchor">#</a> 1、代码嵌套</h5> <div class="language- extra-class"><pre class="language-text"><code>var ninja = &quot;Main&quot;;
+function skulk() {
+	var action = &quot;skulking&quot;;
+	function report() {
+		var reportNum = 3;
+		for(var i = 0; i &lt; reportNum; i++) {
+			console.log(ninja + &quot; &quot; + action + &quot; &quot; + i );
+		}
+	}
+	report();
+}
+skulk();
+</code></pre></div><p>上述代码中，skulk函数定义在全局代码中，report函数定义在skulk函数中，for循环嵌套在report函数中。每次执行skulk函数，都会创建新的函数词法环境。for循环可以访问report函数，skulk函数以及全局代码中的变量。report函数可以访问skulk函数以及全局代码中的变量。skulk函数可以访问全局变量。<strong>词法环境帮助函数跟踪判断变量是否可以访问。</strong></p> <h5 id="_2、代码嵌套及词法环境"><a href="#_2、代码嵌套及词法环境" class="header-anchor">#</a> 2、代码嵌套及词法环境</h5> <p>函数执行时，如果在当前环境中无法找到标识符，就会对外部环境进行查找。一旦查找到匹配变量，或者在全局环境中无法查找到对应的标识符返回错误，会停止查找。无论何时调用函数，都会创建一个新的执行环境，与此同时还会创建一个与之相关联的词法环境。外部环境和新建的词法环境相关联成为当前函数的全局环境。</p> <div class="language- extra-class"><pre class="language-text"><code>var ninja = &quot;Muneyoshi&quot;;
+function skulk() {
+	var action = &quot;Skulking&quot;;
+	function report() {
+		var intro = &quot;Aha!&quot;;
+		console.log(intro);
+		console.log(action);
+		console.log(ninja);
+	}
+
+	report();
+}
+skulk();
+</code></pre></div><p>通过以上示例，来说明JavaScript引擎是如何查找变量的值</p> <blockquote><p>打印intro时，JavaScript引擎首先检查当前执行上下文，即report函数环境。查找完成
+打印action时，report中没有action标识符的引用，因此JavaScript引擎需要查找report的外部环境：skulk。查找完成。
+打印ninja时，JavaScript需要查找skulk的外部环境。在调用skulk时，外部环境（即定义skulk的环境）和新创建的skulk环境成为全局环境，因此可以在全局环境中找到ninja标识符。</p></blockquote> <h4 id="五、理解javascript的变量类型"><a href="#五、理解javascript的变量类型" class="header-anchor">#</a> 五、理解JavaScript的变量类型</h4> <p><strong>在JavaScript中，我们通过3个关键字定义变量：var、let和const。这3个关键字有两点不同：可变性和与词法环境的关系</strong></p> <h5 id="_1、变量可变性"><a href="#_1、变量可变性" class="header-anchor">#</a> 1、变量可变性</h5> <ul><li>通过const定义的变量都不可变，其值只能在声明时赋值一次。</li> <li>通过var活let声明的变量值可以变更任意次数。</li></ul> <blockquote><p>值得注意的是：我们不能将一个全新的值赋值给const变量，但是，我们可以修改const变量已有的对象；如果const变量指向一个数组，我们可以修改该数组的长度。</p></blockquote> <h5 id="_2、定义变量的关键字与词法环境"><a href="#_2、定义变量的关键字与词法环境" class="header-anchor">#</a> 2、定义变量的关键字与词法环境</h5> <ul><li>当使用var定义变量时，该变量是在距离最近的函数内部或是在全局词法环境中定义的。换言之，没有块级作用域。在for循环内部定义的变量，在for循环外部依旧能访问。</li> <li>使用let与const定义具有块级作用域的变量。let和const直接在最近的词法环境中定义变量（块级，循环内，函数内和全局环境内）</li></ul> <h5 id="_3、在词法环境中注册标识符"><a href="#_3、在词法环境中注册标识符" class="header-anchor">#</a> 3、在词法环境中注册标识符</h5> <ul><li><p>注册标识符的过程取决于当前词法环境的类型。
+具体过程如下：
+1、如果是创建函数环境，那么会创建形参及函数参数的默认值。
+2、如果是全局环境，会扫描函数的声明，但是不会扫描执行函数表达式和箭头函数。已扫描到的函数，会被创建并与当前环境相同的标识符绑定，如果该标识符已存在，其值将被重写。
+3、如果是块级环境，则扫描当前代码块中以及其他函数之外通过var 声明的变量。若该标识符不存在，进行注册并初始化为undefined，若存在，则保留其值。</p></li> <li><p>JavaScript是如何做到在函数声明之前调用函数的？
+当函数通过声明定义时，在创建词法环境时已经注册了函数标识符，在代码执行之前，该函数已存在。这种情况仅针对函数生命有效，函数表达式和箭头函数是在执行过程中执行定义的。</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>console.log(typeof fun);
+console.log(typeof myFunExp);
+console.log(typeof arrowFun);
+function fun(){};
+var myFunExp = function() {};
+var arrowFun = x =&gt; {};
+//执行结果为
+function
+undefined
+undefined
+</code></pre></div><ul><li>函数重载</li></ul> <div class="language- extra-class"><pre class="language-text"><code>console.log(typeof fun);
+var fun = 3;
+console.log(typeof fun);
+function fun() {};
+console.log(typeof fun)
+//打印结果为：
+function   //此时fun指向函数
+number     //3赋值给fun
+number     //因为创建词法环境时，注册过函数声明，函数声明不会影响标识符的值。
+</code></pre></div><ul><li>关于变量提升
+实际上变量和函数声明在代码里的位置是不会动的，而是在编译阶段被放入内存中。变量的初始换是不会被提升的。</li></ul> <h4 id="六、研究闭包的工作原理"><a href="#六、研究闭包的工作原理" class="header-anchor">#</a> 六、研究闭包的工作原理</h4> <h5 id="_1、回顾使用闭包模拟私有变量的代码"><a href="#_1、回顾使用闭包模拟私有变量的代码" class="header-anchor">#</a> 1、回顾使用闭包模拟私有变量的代码</h5> <div class="language- extra-class"><pre class="language-text"><code>function Ninja() {
+	var feints = 0;  //私有变量
+	this.getFeints = function() {  //访问私有变量的方法
+		return feints;
+	};
+	this.feint = function() { //提供修改私有变量的方法
+		feints++;
+	};
+}
+
+var ninja1 = new Ninja();  
+console.log(ninja1.feints) //尝试直接访问私有变量：undefined
+ninja1.feint()   //调用方法修改私有变量
+console.log(ninja1.getFeints()) //验证已修改私有变量
+
+var ninja2 = new Ninja() //通过构造函数创建实例时，该实例具有独立的私有变量
+console.log(ninja2.getFeints())  
+ 
+</code></pre></div><p>每次通过new调用构造函数时，都会创建一个新的词法环境，该词法环境保持构造函数内部的局部变量。</p> <ul><li>使用new关键字后，一个新的对象被实例化。</li> <li>进入构造函数后，会创建一个新的词法环境，会跟踪在该作用域内创建的所有局部变量。</li> <li>在构造函数执行阶段，其创建了两个函数，并将这两个函数赋值给了新创建的对象。这两个函数始终保持着创建它们的环境的引用。</li></ul> <h5 id="_2、私有变量的警告"><a href="#_2、私有变量的警告" class="header-anchor">#</a> 2、私有变量的警告</h5> <p>可以通过函数访问私有变量，而不是通过对象访问</p> <div class="language- extra-class"><pre class="language-text"><code>function Ninja() {
+	var feints = 0;  //私有变量
+	this.getFeints = function() {  //访问私有变量的方法
+		return feints;
+	};
+	this.feint = function() { //提供修改私有变量的方法
+		feints++;
+	};
+}
+
+var ninja1 = new Ninja();
+ninja1.feint();
+var imposter = {};
+imposter.getFeints = ninja1.getFeints; //将对象ninja1的getFeints方法，赋值给对象imposter
+
+console.log(imposter.getFeints()) //验证我们可以通过对象imposter可以访问ninja1的私有变量：1
+</code></pre></div><p>以上例子可以说明，私有变量并不是真的私有，而是通过闭包实现的&quot;假装&quot;私有。</p> <h5 id="_3、回顾闭包和回调函数的例子"><a href="#_3、回顾闭包和回调函数的例子" class="header-anchor">#</a> 3、回顾闭包和回调函数的例子</h5> <p>在计时器的回调函数中使用闭包</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>box1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>box2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
+function animateIt(elementId) {
+	var elem = document.getElementById(elementId);
+	var tick = 0;
+	var timer = setInterval(function() {
+		if(tick &lt; 100) {
+			elem.style.left = elem.style.top = tick + &quot;px&quot;;
+			tick++;
+		} else {
+			clearInterval(timer);
+			console.log(tick) //通过闭包访问tick
+			console.log(elem) //通过闭包访问dom元素
+			console.log(timer)//通过闭包访问计时器
+		}
+	}, 10);
+}
+animateIt(&quot;box1&quot;);
+animateIt(&quot;box2&quot;);
+//打印结果为：
+100
+&lt;div id=​&quot;box1&quot; style=​&quot;width:​ 50px;​ height:​ 50px;​ background-color:​ red;​ position:​ absolute;​ top:​ 99px;​ left:​ 99px;​&quot;&gt;​<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>​
+1
+100
+&lt;div id=​&quot;box2&quot; style=​&quot;width:​ 50px;​ height:​ 50px;​ background-color:​ yellow;​ position:​ absolute;​ top:​ 99px;​ left:​ 99px;​&quot;&gt;​<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>​
+2
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>secipt</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>每次调用animateIt，都会创建一个对应的函数词法环境，该词法环境保存了动画所需要的重要变量。只要存在通过闭包访问这些变量的函数存在，那么这个环境就会一直存在。上述例子中，浏览器会一直保持setInterval的回调函数，直到调用clearInterval方法。</p></div> <div class="content-time" data-v-246f9819><!----> <time datetime="2019-02-22" class="time-text" data-v-246f9819>上次更新于: 2020-6-10</time></div></article> <section class="flex-xb main info-nav" data-v-74bd5073 data-v-79ff4ee6><a href="/Pages/json2e.html" class="flex-xb nav-item" data-v-74bd5073><!----> <article class="flex-ysc item-content" data-v-74bd5073><h2 class="content-title" data-v-74bd5073>Json2e</h2> <div class="content" data-v-74bd5073><p>利用XLSX搞一个JSON转Excel的小工具</p>
+</div></article></a> <a href="/Pages/TCPIP%E5%8D%8F%E8%AE%AE.html" class="flex-xb nav-item" data-v-74bd5073><!----> <article class="flex-ysc item-content" data-v-74bd5073><h2 class="content-title" data-v-74bd5073>TCP/IP协议</h2> <div class="content" data-v-74bd5073><p>什么是HTTP协议,什么是TCP/IP协议.</p>
+</div></article></a></section> <!----></section></section> <footer class="footer" data-v-991944de data-v-6115008e><nav class="link-list" data-v-991944de><a href="http://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer" class="list-item" data-v-991944de>浙ICP备19049217号</a><a href="https://vuepress.vuejs.org/" target="_blank" rel="noopener noreferrer" class="list-item" data-v-991944de>Power by VuePress</a><a href="https://tolking.github.io/vuepress-theme-ououe/zh/" target="_blank" rel="noopener noreferrer" class="list-item" data-v-991944de>Theme by ououe</a></nav> <a href="/" class="copyright router-link-active" data-v-991944de>Vckkk's b1og © 2020</a></footer></section><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.5ab4da3d.js" defer></script><script src="/assets/js/14.b68b905f.js" defer></script>
+  </body>
+</html>
