@@ -13,8 +13,8 @@ module.exports = {
     }],
     ['script',{},
     (function(){
-      const footer = document.getElementsByTagName('footer')[0];
-      const div = document.createElement('div');
+      const footer = window.document.getElementsByTagName('footer')[0];
+      const div = window.document.createElement('div');
       div.style.color="white";
       div.innerHTML = '<span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>';
       footer.insertBefore(div,footer.lastElementChild)
