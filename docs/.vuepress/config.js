@@ -21,6 +21,7 @@ module.exports = {
     })()
     `]
   ],
+  
   base: '/',
   port: 8086,
   serviceWorker: true,
