@@ -7,6 +7,9 @@ module.exports = {
     ['link', {
       rel: 'icon',
       href: '/favicon.png'
+    }],
+    ['script',{
+      href:'//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
     }]
   ],
   base: '/',
