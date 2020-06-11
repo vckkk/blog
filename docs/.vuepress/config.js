@@ -21,7 +21,7 @@ module.exports = {
         div.innerHTML = '<span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>';
        footer && footer.insertBefore(div,footer.lastElementChild)
      `;
-      const app = document.getElementById('app')[0];
+      const app = document.getElementById('app');
       app.insertBefore(s,app.lastElementChild);
     })()
     `]
