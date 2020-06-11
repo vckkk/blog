@@ -13,12 +13,16 @@ module.exports = {
     }],
     ['script',{},`
     (function(){
-      const footer = window.document.getElementsByTagName('footer')[0];
-      const div = window.document.createElement('div');
-      div.style.color="white";
-      div.innerHTML = '<span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>';
-      console.log(footer)
-      footer && footer.insertBefore(div,footer.lastElementChild)
+      const s = document.createElement('script');
+      s.innerHTML = `
+        const footer = window.document.getElementsByTagName('footer')[0];
+        const div = window.document.createElement('div');
+        div.style.color="white";
+        div.innerHTML = '<span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>';
+       footer && footer.insertBefore(div,footer.lastElementChild)
+     `;
+      const app = document.getElementById('app')[0];
+      app.insertBefore(s,app.lastElementChild);
     })()
     `]
   ],
