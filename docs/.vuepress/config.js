@@ -8,19 +8,19 @@ module.exports = {
       rel: 'icon',
       href: '/favicon.png'
     }],
-    ['script',{
-      href:'//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    ['script', {
+      href: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
     }],
-    ['script',{},`
-    (function(){
-      const s = document.createElement('script');
-      s.innerHTML = `const footer = window.document.getElementsByTagName('footer')[0];const div = window.document.createElement('div');div.style.color="white";div.innerHTML = '<span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>';footer && footer.insertBefore(div,footer.lastElementChild)`;
-      const app = document.getElementById('app');
-      app.insertBefore(s,app.lastElementChild);
-    })()
-    `]
+    // ['script',{},`
+    // (function(){
+    //   const s = document.createElement('script');
+    //   s.innerHTML = `const footer = window.document.getElementsByTagName('footer')[0];const div = window.document.createElement('div');div.style.color="white";div.innerHTML = '<span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>';footer && footer.insertBefore(div,footer.lastElementChild)`;
+    //   const app = document.getElementById('app');
+    //   app.insertBefore(s,app.lastElementChild);
+    // })()
+    // `]
   ],
-  
+
   base: '/',
   port: 8086,
   serviceWorker: true,
