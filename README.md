@@ -7,3 +7,6 @@
 
 ### 11-19
 网站备案成功，已将内容全部迁移至[vckkk](http://www.webhbz.com),现已经服务端搭建Jenkins，利用GitHub webHooks监听push动作，在云端进行构建后，使用Nginx将服务运行在指定端口下。
+
+### 2023-04-13
+drone-CI测试
