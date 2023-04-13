@@ -4,17 +4,27 @@ name: default
 
 steps:
 - name: build
-  image: docker
+  image: node:10
   commands:
-  - docker build -t myapp .
+    - rm -rf node_modules 
+    - npm install
+    - npm i lru-cache toml @vue/component-compiler-utils @babel/core vue-router autoprefixer
+    - npm run build
+  when:
+    event: 
+      - push
+      - pull_request
+    
 
 - name: deploy
-  image: alpine
-  environment:
-    - DOCKER_HOST=tcp://docker:2375
-  commands:
-  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-  - docker pull myapp
-  - docker stop myapp || true
-  - docker rm myapp || true
-  - docker run -d --name myapp -p 80:80 myapp
+  image: appleboy/drone-scp
+  settings:
+    host: 49.232.203.23
+    username: 
+      from_secret: ssh_username
+    password: 
+      from_secret: ssh_password
+    port: 8086
+    target: /var/www/blog
+    source:
+      - ./docs/.vuepress/dist/*
