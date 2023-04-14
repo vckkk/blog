@@ -3,6 +3,13 @@ type: docker
 name: default
 
 steps:
+- name: clone
+  image: image: alpine/git
+  commands:
+    - git clone https://github.com/vckkk/blog.git
+  environment:
+    - GIT_USERNAME: {{$secrets.git_username}}
+    - GIT_PASSWORD: {{$secrets.git_pwd}}
 - name: build
   image: node:14
   commands:
