@@ -4,7 +4,7 @@ name: default
 
 steps:
 - name: clone
-  image: image: alpine/git
+  image: alpine/git
   commands:
     - git clone https://github.com/vckkk/blog.git
   environment:
