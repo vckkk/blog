@@ -8,8 +8,8 @@ steps:
   commands:
     - git clone https://github.com/vckkk/blog.git
   environment:
-    GIT_USERNAME: {{$secrets.git_username}}
-    GIT_PASSWORD: {{$secrets.git_pwd}}
+    GIT_USERNAME: ${{secrets.git_username}}
+    GIT_PASSWORD: ${{secrets.git_pwd}}
 
 - name: build
   image: node:14
