@@ -1,6 +1,6 @@
 kind: pipeline
 type: docker
-name: my-node-build1
+name: my-node-build
 
 trigger:
   branch:
