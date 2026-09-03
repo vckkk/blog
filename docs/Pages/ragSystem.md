@@ -4,8 +4,6 @@ display: home
 date: 2026-09-01
 ---
 
-# RAG 系统架构与业务流程
-
 本文档基于当前仓库中的 `eagent`、`eagent-web` 和 `eagent-admin` 实现整理。三张图分别回答：
 
 1. 系统由哪些应用、服务和存储组成；
