@@ -35,6 +35,7 @@ jobs:
           cache: 'npm'
       - name: Install & Build
         run: |
+          export NODE_OPTIONS=--openssl-legacy-provider
           npm ci
           npm run build
       - name: Upload artifact
