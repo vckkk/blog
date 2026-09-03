@@ -37,6 +37,7 @@ jobs:
         run: |
           export NODE_OPTIONS=--openssl-legacy-provider
           npm ci
+          npm install vuepress-plugin-mermaidjs@1.9.1 --save
           npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
