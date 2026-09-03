@@ -80,6 +80,13 @@ module.exports = {
     ]
   },
   plugins: [
+    ['mermaidjs', {
+      theme: 'default',
+      mermaid:{
+        securityLevel: 'loose',
+      }
+    }
+    ],
     ['@vssue/vuepress-plugin-vssue', {
       platform: 'github',
       owner: 'vckkk',
